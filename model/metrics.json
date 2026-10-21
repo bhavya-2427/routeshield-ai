@@ -1,0 +1,91 @@
+{
+  "n_records": 35000,
+  "n_train": 28000,
+  "n_test": 7000,
+  "n_features": 44,
+  "params": {
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "max_depth": 3,
+    "random_state": 42
+  },
+  "accuracy": 0.9505714285714286,
+  "f1_weighted": 0.9505727871607891,
+  "per_class": {
+    "Moderate": {
+      "precision": 0.9429887705154045,
+      "recall": 0.9567630733274906,
+      "f1-score": 0.9498259860788864,
+      "support": 3423.0
+    },
+    "Safe": {
+      "precision": 0.9563063063063063,
+      "recall": 0.9402125775022143,
+      "f1-score": 0.9481911567664135,
+      "support": 2258.0
+    },
+    "Unsafe": {
+      "precision": 0.9609793420045907,
+      "recall": 0.9522365428354814,
+      "f1-score": 0.9565879664889566,
+      "support": 1319.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Moderate",
+      "Safe",
+      "Unsafe"
+    ],
+    "matrix": [
+      [
+        3275,
+        97,
+        51
+      ],
+      [
+        135,
+        2123,
+        0
+      ],
+      [
+        63,
+        0,
+        1256
+      ]
+    ]
+  },
+  "cv5_accuracy_mean": 0.9531142857142857,
+  "cv5_accuracy_std": 0.0020749231606131658,
+  "top_features": {
+    "Crime_Severity": 0.4452426030710299,
+    "Area_Type_Forest/Green Belt": 0.15786585348349125,
+    "Street_Light_Density": 0.1505193113023132,
+    "Nearby_CCTV_Cameras": 0.09849399120200862,
+    "Num_Police_Stations_Nearby": 0.03731137200528977,
+    "Public_Complaints": 0.03605644951461253,
+    "Time_of_Day_Night": 0.023479512959119195,
+    "Area_Type_Isolated/Highway": 0.01953524855354745,
+    "Area_Type_Industrial": 0.008171811102364574,
+    "Road_Accidents_Reported": 0.006233045806502164
+  },
+  "class_distribution": {
+    "Moderate": 17115,
+    "Safe": 11291,
+    "Unsafe": 6594
+  },
+  "label_thresholds_from_Safety_Score": {
+    "Moderate": [
+      35.0,
+      65.9
+    ],
+    "Safe": [
+      66.1,
+      100.0
+    ],
+    "Unsafe": [
+      0.0,
+      34.9
+    ]
+  }
+}

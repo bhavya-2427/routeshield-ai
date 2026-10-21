@@ -1,0 +1,2570 @@
+{
+ "locations": {
+  "Aravalli Biodiversity Park": {
+   "lat": 28.486995512359552,
+   "lon": 77.11746743595506,
+   "area_type": "Forest/Green Belt",
+   "crime_type": "Theft",
+   "n": 890,
+   "mean": {
+    "Crime_Severity": 7.594269662921349,
+    "Police_Response_Time_Minutes": 35.92247191011236,
+    "Weather_Visibility_KM": 5.5618651685393266,
+    "Traffic_Congestion_Level": 1.3696629213483147,
+    "Road_Accidents_Reported": 2.438202247191011,
+    "Nearby_CCTV_Cameras": 0.7258426966292135,
+    "Street_Light_Density": 1.232696629213483,
+    "Public_Complaints": 5.4707865168539325,
+    "Num_Police_Stations_Nearby": 1.0112359550561798
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 7.134399999999999,
+     "Police_Response_Time_Minutes": 36.212,
+     "Weather_Visibility_KM": 5.661560000000001,
+     "Traffic_Congestion_Level": 1.324,
+     "Road_Accidents_Reported": 2.296,
+     "Nearby_CCTV_Cameras": 0.648,
+     "Street_Light_Density": 1.0912,
+     "Public_Complaints": 5.5,
+     "Num_Police_Stations_Nearby": 1.032
+    },
+    "Evening": {
+     "Crime_Severity": 7.651891891891891,
+     "Police_Response_Time_Minutes": 35.637837837837836,
+     "Weather_Visibility_KM": 5.173675675675676,
+     "Traffic_Congestion_Level": 1.2972972972972974,
+     "Road_Accidents_Reported": 2.4216216216216218,
+     "Nearby_CCTV_Cameras": 0.8216216216216217,
+     "Street_Light_Density": 1.285945945945946,
+     "Public_Complaints": 5.454054054054054,
+     "Num_Police_Stations_Nearby": 1.0810810810810811
+    },
+    "Morning": {
+     "Crime_Severity": 7.096385542168675,
+     "Police_Response_Time_Minutes": 35.93172690763052,
+     "Weather_Visibility_KM": 5.704859437751004,
+     "Traffic_Congestion_Level": 1.3493975903614457,
+     "Road_Accidents_Reported": 2.4417670682730925,
+     "Nearby_CCTV_Cameras": 0.7028112449799196,
+     "Street_Light_Density": 1.2787148594377509,
+     "Public_Complaints": 5.377510040160643,
+     "Num_Police_Stations_Nearby": 0.9477911646586346
+    },
+    "Night": {
+     "Crime_Severity": 8.70242718446602,
+     "Police_Response_Time_Minutes": 35.81553398058252,
+     "Weather_Visibility_KM": 5.616650485436894,
+     "Traffic_Congestion_Level": 1.5145631067961165,
+     "Road_Accidents_Reported": 2.621359223300971,
+     "Nearby_CCTV_Cameras": 0.7621359223300971,
+     "Street_Light_Density": 1.3009708737864079,
+     "Public_Complaints": 5.563106796116505,
+     "Num_Police_Stations_Nearby": 1.0
+    }
+   }
+  },
+  "Ashok Vihar": {
+   "lat": 28.69412176960193,
+   "lon": 77.17426698552474,
+   "area_type": "Residential",
+   "crime_type": "Harassment",
+   "n": 829,
+   "mean": {
+    "Crime_Severity": 4.402533172496984,
+    "Police_Response_Time_Minutes": 19.665862484921593,
+    "Weather_Visibility_KM": 5.395307599517491,
+    "Traffic_Congestion_Level": 4.02291917973462,
+    "Road_Accidents_Reported": 3.1821471652593485,
+    "Nearby_CCTV_Cameras": 4.433051869722557,
+    "Street_Light_Density": 6.5480096501809415,
+    "Public_Complaints": 2.540410132689988,
+    "Num_Police_Stations_Nearby": 2.7285886610373944
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.022477064220184,
+     "Police_Response_Time_Minutes": 19.229357798165136,
+     "Weather_Visibility_KM": 5.2844495412844035,
+     "Traffic_Congestion_Level": 4.10091743119266,
+     "Road_Accidents_Reported": 3.243119266055046,
+     "Nearby_CCTV_Cameras": 4.339449541284404,
+     "Street_Light_Density": 6.625688073394496,
+     "Public_Complaints": 2.4174311926605503,
+     "Num_Police_Stations_Nearby": 2.756880733944954
+    },
+    "Evening": {
+     "Crime_Severity": 4.496111111111111,
+     "Police_Response_Time_Minutes": 19.894444444444446,
+     "Weather_Visibility_KM": 5.677666666666667,
+     "Traffic_Congestion_Level": 3.783333333333333,
+     "Road_Accidents_Reported": 3.2555555555555555,
+     "Nearby_CCTV_Cameras": 4.516666666666667,
+     "Street_Light_Density": 6.351666666666667,
+     "Public_Complaints": 2.7944444444444443,
+     "Num_Police_Stations_Nearby": 2.716666666666667
+    },
+    "Morning": {
+     "Crime_Severity": 4.130252100840337,
+     "Police_Response_Time_Minutes": 20.126050420168067,
+     "Weather_Visibility_KM": 5.264285714285713,
+     "Traffic_Congestion_Level": 4.088235294117647,
+     "Road_Accidents_Reported": 3.226890756302521,
+     "Nearby_CCTV_Cameras": 4.495798319327731,
+     "Street_Light_Density": 6.574789915966385,
+     "Public_Complaints": 2.6596638655462184,
+     "Num_Police_Stations_Nearby": 2.689075630252101
+    },
+    "Night": {
+     "Crime_Severity": 5.080310880829016,
+     "Police_Response_Time_Minutes": 19.378238341968913,
+     "Weather_Visibility_KM": 5.418756476683938,
+     "Traffic_Congestion_Level": 4.077720207253886,
+     "Road_Accidents_Reported": 2.989637305699482,
+     "Nearby_CCTV_Cameras": 4.383419689119171,
+     "Street_Light_Density": 6.610362694300519,
+     "Public_Complaints": 2.295336787564767,
+     "Num_Police_Stations_Nearby": 2.756476683937824
+    }
+   }
+  },
+  "Asola Bhatti Wildlife Sanctuary Rd": {
+   "lat": 28.449258588032222,
+   "lon": 77.18990170771002,
+   "area_type": "Forest/Green Belt",
+   "crime_type": "Theft",
+   "n": 869,
+   "mean": {
+    "Crime_Severity": 7.67307249712313,
+    "Police_Response_Time_Minutes": 36.032220943613346,
+    "Weather_Visibility_KM": 5.487905638665132,
+    "Traffic_Congestion_Level": 1.3210586881472957,
+    "Road_Accidents_Reported": 2.3958573072497122,
+    "Nearby_CCTV_Cameras": 0.7031070195627158,
+    "Street_Light_Density": 1.1779056386651323,
+    "Public_Complaints": 5.468354430379747,
+    "Num_Police_Stations_Nearby": 0.9896432681242808
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 7.137037037037036,
+     "Police_Response_Time_Minutes": 36.16872427983539,
+     "Weather_Visibility_KM": 5.469012345679012,
+     "Traffic_Congestion_Level": 1.3580246913580247,
+     "Road_Accidents_Reported": 2.3292181069958846,
+     "Nearby_CCTV_Cameras": 0.7160493827160493,
+     "Street_Light_Density": 1.2670781893004115,
+     "Public_Complaints": 5.341563786008231,
+     "Num_Police_Stations_Nearby": 0.9547325102880658
+    },
+    "Evening": {
+     "Crime_Severity": 7.703174603174603,
+     "Police_Response_Time_Minutes": 36.65608465608466,
+     "Weather_Visibility_KM": 5.262063492063492,
+     "Traffic_Congestion_Level": 1.2698412698412698,
+     "Road_Accidents_Reported": 2.4074074074074074,
+     "Nearby_CCTV_Cameras": 0.7301587301587301,
+     "Street_Light_Density": 0.9910052910052911,
+     "Public_Complaints": 5.5661375661375665,
+     "Num_Police_Stations_Nearby": 0.9788359788359788
+    },
+    "Morning": {
+     "Crime_Severity": 7.239055793991416,
+     "Police_Response_Time_Minutes": 35.81974248927039,
+     "Weather_Visibility_KM": 5.673304721030044,
+     "Traffic_Congestion_Level": 1.3304721030042919,
+     "Road_Accidents_Reported": 2.515021459227468,
+     "Nearby_CCTV_Cameras": 0.630901287553648,
+     "Street_Light_Density": 1.1866952789699572,
+     "Public_Complaints": 5.527896995708154,
+     "Num_Police_Stations_Nearby": 0.9871244635193133
+    },
+    "Night": {
+     "Crime_Severity": 8.779411764705882,
+     "Police_Response_Time_Minutes": 35.53431372549019,
+     "Weather_Visibility_KM": 5.507892156862743,
+     "Traffic_Congestion_Level": 1.3137254901960784,
+     "Road_Accidents_Reported": 2.3284313725490198,
+     "Nearby_CCTV_Cameras": 0.7450980392156863,
+     "Street_Light_Density": 1.2348039215686273,
+     "Public_Complaints": 5.46078431372549,
+     "Num_Police_Stations_Nearby": 1.0441176470588236
+    }
+   }
+  },
+  "Bawana Industrial Area": {
+   "lat": 28.798746537897305,
+   "lon": 77.03366680684597,
+   "area_type": "Industrial",
+   "crime_type": "Theft",
+   "n": 818,
+   "mean": {
+    "Crime_Severity": 5.991442542787286,
+    "Police_Response_Time_Minutes": 28.60635696821516,
+    "Weather_Visibility_KM": 5.535721271393643,
+    "Traffic_Congestion_Level": 3.4511002444987775,
+    "Road_Accidents_Reported": 3.0819070904645476,
+    "Nearby_CCTV_Cameras": 2.5366748166259168,
+    "Street_Light_Density": 4.115525672371638,
+    "Public_Complaints": 3.91320293398533,
+    "Num_Police_Stations_Nearby": 1.645476772616137
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 5.564197530864197,
+     "Police_Response_Time_Minutes": 28.93415637860082,
+     "Weather_Visibility_KM": 5.777283950617284,
+     "Traffic_Congestion_Level": 3.4362139917695473,
+     "Road_Accidents_Reported": 3.234567901234568,
+     "Nearby_CCTV_Cameras": 2.506172839506173,
+     "Street_Light_Density": 4.261316872427984,
+     "Public_Complaints": 4.127572016460905,
+     "Num_Police_Stations_Nearby": 1.6296296296296295
+    },
+    "Evening": {
+     "Crime_Severity": 5.979012345679012,
+     "Police_Response_Time_Minutes": 28.617283950617285,
+     "Weather_Visibility_KM": 5.431728395061727,
+     "Traffic_Congestion_Level": 3.425925925925926,
+     "Road_Accidents_Reported": 2.950617283950617,
+     "Nearby_CCTV_Cameras": 2.567901234567901,
+     "Street_Light_Density": 4.1228395061728405,
+     "Public_Complaints": 3.845679012345679,
+     "Num_Police_Stations_Nearby": 1.6296296296296295
+    },
+    "Morning": {
+     "Crime_Severity": 5.5358744394618835,
+     "Police_Response_Time_Minutes": 28.26457399103139,
+     "Weather_Visibility_KM": 5.5239461883408065,
+     "Traffic_Congestion_Level": 3.6367713004484306,
+     "Road_Accidents_Reported": 3.197309417040359,
+     "Nearby_CCTV_Cameras": 2.4394618834080717,
+     "Street_Light_Density": 4.006726457399103,
+     "Public_Complaints": 3.6547085201793723,
+     "Num_Police_Stations_Nearby": 1.695067264573991
+    },
+    "Night": {
+     "Crime_Severity": 7.083157894736843,
+     "Police_Response_Time_Minutes": 28.57894736842105,
+     "Weather_Visibility_KM": 5.329263157894737,
+     "Traffic_Congestion_Level": 3.2736842105263158,
+     "Road_Accidents_Reported": 2.863157894736842,
+     "Nearby_CCTV_Cameras": 2.663157894736842,
+     "Street_Light_Density": 4.050526315789474,
+     "Public_Complaints": 4.0,
+     "Num_Police_Stations_Nearby": 1.6210526315789473
+    }
+   }
+  },
+  "Central Ridge (Buddha Jayanti Park)": {
+   "lat": 28.612917960850112,
+   "lon": 77.18300031767339,
+   "area_type": "Forest/Green Belt",
+   "crime_type": "Theft",
+   "n": 894,
+   "mean": {
+    "Crime_Severity": 7.6046979865771815,
+    "Police_Response_Time_Minutes": 36.27852348993289,
+    "Weather_Visibility_KM": 5.4651901565995535,
+    "Traffic_Congestion_Level": 1.383668903803132,
+    "Road_Accidents_Reported": 2.460850111856823,
+    "Nearby_CCTV_Cameras": 0.7472035794183445,
+    "Street_Light_Density": 1.2369127516778526,
+    "Public_Complaints": 5.559284116331096,
+    "Num_Police_Stations_Nearby": 0.9787472035794184
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 7.072608695652175,
+     "Police_Response_Time_Minutes": 36.21304347826087,
+     "Weather_Visibility_KM": 5.5591739130434785,
+     "Traffic_Congestion_Level": 1.4,
+     "Road_Accidents_Reported": 2.5565217391304347,
+     "Nearby_CCTV_Cameras": 0.7130434782608696,
+     "Street_Light_Density": 1.2795652173913044,
+     "Public_Complaints": 5.504347826086956,
+     "Num_Police_Stations_Nearby": 0.908695652173913
+    },
+    "Evening": {
+     "Crime_Severity": 7.644285714285714,
+     "Police_Response_Time_Minutes": 36.7952380952381,
+     "Weather_Visibility_KM": 5.528333333333333,
+     "Traffic_Congestion_Level": 1.5285714285714285,
+     "Road_Accidents_Reported": 2.4761904761904763,
+     "Nearby_CCTV_Cameras": 0.6285714285714286,
+     "Street_Light_Density": 1.2657142857142858,
+     "Public_Complaints": 5.5,
+     "Num_Police_Stations_Nearby": 0.9523809523809523
+    },
+    "Morning": {
+     "Crime_Severity": 6.97531380753138,
+     "Police_Response_Time_Minutes": 36.70292887029289,
+     "Weather_Visibility_KM": 5.2324267782426785,
+     "Traffic_Congestion_Level": 1.284518828451883,
+     "Road_Accidents_Reported": 2.3598326359832638,
+     "Nearby_CCTV_Cameras": 0.8284518828451883,
+     "Street_Light_Density": 1.198744769874477,
+     "Public_Complaints": 5.510460251046025,
+     "Num_Police_Stations_Nearby": 0.9665271966527197
+    },
+    "Night": {
+     "Crime_Severity": 8.834883720930232,
+     "Police_Response_Time_Minutes": 35.372093023255815,
+     "Weather_Visibility_KM": 5.561720930232558,
+     "Traffic_Congestion_Level": 1.3348837209302327,
+     "Road_Accidents_Reported": 2.4558139534883723,
+     "Nearby_CCTV_Cameras": 0.8093023255813954,
+     "Street_Light_Density": 1.2055813953488368,
+     "Public_Complaints": 5.730232558139535,
+     "Num_Police_Stations_Nearby": 1.0930232558139534
+    }
+   }
+  },
+  "Chandni Chowk": {
+   "lat": 28.650862259143157,
+   "lon": 77.2300880783699,
+   "area_type": "Market",
+   "crime_type": "Theft",
+   "n": 957,
+   "mean": {
+    "Crime_Severity": 4.77669801462905,
+    "Police_Response_Time_Minutes": 17.260188087774296,
+    "Weather_Visibility_KM": 5.55201671891327,
+    "Traffic_Congestion_Level": 6.915360501567398,
+    "Road_Accidents_Reported": 4.16614420062696,
+    "Nearby_CCTV_Cameras": 6.083594566353187,
+    "Street_Light_Density": 7.468861024033438,
+    "Public_Complaints": 4.375130616509927,
+    "Num_Police_Stations_Nearby": 3.0073145245559036
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.4029914529914524,
+     "Police_Response_Time_Minutes": 17.141025641025642,
+     "Weather_Visibility_KM": 5.527863247863248,
+     "Traffic_Congestion_Level": 6.901709401709402,
+     "Road_Accidents_Reported": 4.226495726495727,
+     "Nearby_CCTV_Cameras": 5.9743589743589745,
+     "Street_Light_Density": 7.386324786324787,
+     "Public_Complaints": 4.089743589743589,
+     "Num_Police_Stations_Nearby": 3.02991452991453
+    },
+    "Evening": {
+     "Crime_Severity": 4.65560538116592,
+     "Police_Response_Time_Minutes": 17.506726457399104,
+     "Weather_Visibility_KM": 5.830313901345292,
+     "Traffic_Congestion_Level": 7.0807174887892375,
+     "Road_Accidents_Reported": 4.237668161434978,
+     "Nearby_CCTV_Cameras": 6.147982062780269,
+     "Street_Light_Density": 7.425112107623318,
+     "Public_Complaints": 4.5874439461883405,
+     "Num_Police_Stations_Nearby": 2.977578475336323
+    },
+    "Morning": {
+     "Crime_Severity": 4.524817518248176,
+     "Police_Response_Time_Minutes": 17.105839416058394,
+     "Weather_Visibility_KM": 5.307226277372262,
+     "Traffic_Congestion_Level": 6.850364963503649,
+     "Road_Accidents_Reported": 4.1678832116788325,
+     "Nearby_CCTV_Cameras": 6.109489051094891,
+     "Street_Light_Density": 7.523722627737226,
+     "Public_Complaints": 4.474452554744525,
+     "Num_Police_Stations_Nearby": 3.0072992700729926
+    },
+    "Night": {
+     "Crime_Severity": 5.588495575221239,
+     "Police_Response_Time_Minutes": 17.327433628318584,
+     "Weather_Visibility_KM": 5.599203539823008,
+     "Traffic_Congestion_Level": 6.845132743362832,
+     "Road_Accidents_Reported": 4.030973451327434,
+     "Nearby_CCTV_Cameras": 6.101769911504425,
+     "Street_Light_Density": 7.530973451327434,
+     "Public_Complaints": 4.34070796460177,
+     "Num_Police_Stations_Nearby": 3.0132743362831858
+    }
+   }
+  },
+  "Connaught Place": {
+   "lat": 28.6316625877503,
+   "lon": 77.21644632037693,
+   "area_type": "Commercial",
+   "crime_type": "Theft",
+   "n": 849,
+   "mean": {
+    "Crime_Severity": 3.9849234393404003,
+    "Police_Response_Time_Minutes": 14.452296819787986,
+    "Weather_Visibility_KM": 5.504581861012957,
+    "Traffic_Congestion_Level": 6.379269729093051,
+    "Road_Accidents_Reported": 3.8963486454652534,
+    "Nearby_CCTV_Cameras": 7.011778563015312,
+    "Street_Light_Density": 7.843580683156656,
+    "Public_Complaints": 3.101295641931684,
+    "Num_Police_Stations_Nearby": 3.4840989399293285
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.9635555555555553,
+     "Police_Response_Time_Minutes": 14.63111111111111,
+     "Weather_Visibility_KM": 5.614888888888888,
+     "Traffic_Congestion_Level": 6.448888888888889,
+     "Road_Accidents_Reported": 4.04,
+     "Nearby_CCTV_Cameras": 7.044444444444444,
+     "Street_Light_Density": 7.770666666666667,
+     "Public_Complaints": 3.0844444444444443,
+     "Num_Police_Stations_Nearby": 3.417777777777778
+    },
+    "Evening": {
+     "Crime_Severity": 3.9135000000000004,
+     "Police_Response_Time_Minutes": 14.555,
+     "Weather_Visibility_KM": 5.551800000000001,
+     "Traffic_Congestion_Level": 6.15,
+     "Road_Accidents_Reported": 3.655,
+     "Nearby_CCTV_Cameras": 7.065,
+     "Street_Light_Density": 7.872500000000001,
+     "Public_Complaints": 3.15,
+     "Num_Police_Stations_Nearby": 3.55
+    },
+    "Morning": {
+     "Crime_Severity": 3.590990990990991,
+     "Police_Response_Time_Minutes": 15.0,
+     "Weather_Visibility_KM": 5.646216216216216,
+     "Traffic_Congestion_Level": 6.436936936936937,
+     "Road_Accidents_Reported": 3.936936936936937,
+     "Nearby_CCTV_Cameras": 6.923423423423423,
+     "Street_Light_Density": 7.856306306306306,
+     "Public_Complaints": 2.9954954954954953,
+     "Num_Police_Stations_Nearby": 3.364864864864865
+    },
+    "Night": {
+     "Crime_Severity": 4.512376237623762,
+     "Police_Response_Time_Minutes": 13.549504950495049,
+     "Weather_Visibility_KM": 5.17930693069307,
+     "Traffic_Congestion_Level": 6.465346534653466,
+     "Road_Accidents_Reported": 3.9306930693069306,
+     "Nearby_CCTV_Cameras": 7.01980198019802,
+     "Street_Light_Density": 7.882178217821782,
+     "Public_Complaints": 3.1881188118811883,
+     "Num_Police_Stations_Nearby": 3.623762376237624
+    }
+   }
+  },
+  "Delhi University North Campus": {
+   "lat": 28.689118987818382,
+   "lon": 77.20983023920266,
+   "area_type": "Educational",
+   "crime_type": "Theft",
+   "n": 903,
+   "mean": {
+    "Crime_Severity": 3.6483942414174972,
+    "Police_Response_Time_Minutes": 20.99003322259136,
+    "Weather_Visibility_KM": 5.40734219269103,
+    "Traffic_Congestion_Level": 4.550387596899225,
+    "Road_Accidents_Reported": 3.302325581395349,
+    "Nearby_CCTV_Cameras": 5.514950166112957,
+    "Street_Light_Density": 6.973200442967885,
+    "Public_Complaints": 2.0808416389811737,
+    "Num_Police_Stations_Nearby": 2.4219269102990033
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.4118773946360155,
+     "Police_Response_Time_Minutes": 20.590038314176244,
+     "Weather_Visibility_KM": 5.321647509578545,
+     "Traffic_Congestion_Level": 4.655172413793103,
+     "Road_Accidents_Reported": 3.4022988505747125,
+     "Nearby_CCTV_Cameras": 5.567049808429119,
+     "Street_Light_Density": 6.983524904214558,
+     "Public_Complaints": 2.160919540229885,
+     "Num_Police_Stations_Nearby": 2.5402298850574714
+    },
+    "Evening": {
+     "Crime_Severity": 3.6962765957446813,
+     "Police_Response_Time_Minutes": 21.46276595744681,
+     "Weather_Visibility_KM": 5.195053191489362,
+     "Traffic_Congestion_Level": 4.51595744680851,
+     "Road_Accidents_Reported": 3.6117021276595747,
+     "Nearby_CCTV_Cameras": 5.702127659574468,
+     "Street_Light_Density": 6.970744680851064,
+     "Public_Complaints": 2.0531914893617023,
+     "Num_Police_Stations_Nearby": 2.4308510638297873
+    },
+    "Morning": {
+     "Crime_Severity": 3.5300429184549356,
+     "Police_Response_Time_Minutes": 20.70815450643777,
+     "Weather_Visibility_KM": 5.619570815450643,
+     "Traffic_Congestion_Level": 4.785407725321888,
+     "Road_Accidents_Reported": 3.40343347639485,
+     "Nearby_CCTV_Cameras": 5.334763948497854,
+     "Street_Light_Density": 7.029184549356224,
+     "Public_Complaints": 1.9957081545064377,
+     "Num_Police_Stations_Nearby": 2.3776824034334765
+    },
+    "Night": {
+     "Crime_Severity": 4.011764705882353,
+     "Police_Response_Time_Minutes": 21.357466063348415,
+     "Weather_Visibility_KM": 5.465384615384616,
+     "Traffic_Congestion_Level": 4.208144796380091,
+     "Road_Accidents_Reported": 2.81447963800905,
+     "Nearby_CCTV_Cameras": 5.484162895927602,
+     "Street_Light_Density": 6.904072398190045,
+     "Public_Complaints": 2.0995475113122173,
+     "Num_Police_Stations_Nearby": 2.321266968325792
+    }
+   }
+  },
+  "Dilshad Garden": {
+   "lat": 28.67882225369738,
+   "lon": 77.32263904778156,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 879,
+   "mean": {
+    "Crime_Severity": 4.388509670079636,
+    "Police_Response_Time_Minutes": 19.887372013651877,
+    "Weather_Visibility_KM": 5.470932878270762,
+    "Traffic_Congestion_Level": 4.141069397042093,
+    "Road_Accidents_Reported": 3.2320819112627985,
+    "Nearby_CCTV_Cameras": 4.476678043230944,
+    "Street_Light_Density": 6.47349260523322,
+    "Public_Complaints": 2.7417519908987487,
+    "Num_Police_Stations_Nearby": 2.6916951080773606
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.060434782608696,
+     "Police_Response_Time_Minutes": 20.01304347826087,
+     "Weather_Visibility_KM": 5.415260869565216,
+     "Traffic_Congestion_Level": 3.9695652173913043,
+     "Road_Accidents_Reported": 3.252173913043478,
+     "Nearby_CCTV_Cameras": 4.456521739130435,
+     "Street_Light_Density": 6.514782608695652,
+     "Public_Complaints": 2.765217391304348,
+     "Num_Police_Stations_Nearby": 2.6826086956521737
+    },
+    "Evening": {
+     "Crime_Severity": 4.49951923076923,
+     "Police_Response_Time_Minutes": 20.60576923076923,
+     "Weather_Visibility_KM": 5.4750000000000005,
+     "Traffic_Congestion_Level": 4.293269230769231,
+     "Road_Accidents_Reported": 3.1586538461538463,
+     "Nearby_CCTV_Cameras": 4.605769230769231,
+     "Street_Light_Density": 6.427884615384615,
+     "Public_Complaints": 2.75,
+     "Num_Police_Stations_Nearby": 2.6586538461538463
+    },
+    "Morning": {
+     "Crime_Severity": 4.105327868852458,
+     "Police_Response_Time_Minutes": 20.081967213114755,
+     "Weather_Visibility_KM": 5.497008196721311,
+     "Traffic_Congestion_Level": 4.192622950819672,
+     "Road_Accidents_Reported": 3.3524590163934427,
+     "Nearby_CCTV_Cameras": 4.430327868852459,
+     "Street_Light_Density": 6.4311475409836065,
+     "Public_Complaints": 2.790983606557377,
+     "Num_Police_Stations_Nearby": 2.622950819672131
+    },
+    "Night": {
+     "Crime_Severity": 5.00507614213198,
+     "Police_Response_Time_Minutes": 18.741116751269036,
+     "Weather_Visibility_KM": 5.499340101522842,
+     "Traffic_Congestion_Level": 4.116751269035533,
+     "Road_Accidents_Reported": 3.1370558375634516,
+     "Nearby_CCTV_Cameras": 4.4213197969543145,
+     "Street_Light_Density": 6.5258883248730974,
+     "Public_Complaints": 2.6446700507614214,
+     "Num_Police_Stations_Nearby": 2.8223350253807107
+    }
+   }
+  },
+  "Dwarka": {
+   "lat": 28.592156973441107,
+   "lon": 77.046050704388,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 866,
+   "mean": {
+    "Crime_Severity": 4.404387990762125,
+    "Police_Response_Time_Minutes": 19.823325635103927,
+    "Weather_Visibility_KM": 5.359572748267899,
+    "Traffic_Congestion_Level": 4.003464203233256,
+    "Road_Accidents_Reported": 3.147806004618938,
+    "Nearby_CCTV_Cameras": 4.64203233256351,
+    "Street_Light_Density": 6.54688221709007,
+    "Public_Complaints": 2.6547344110854505,
+    "Num_Police_Stations_Nearby": 2.704387990762125
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.993415637860082,
+     "Police_Response_Time_Minutes": 19.625514403292183,
+     "Weather_Visibility_KM": 5.520658436213992,
+     "Traffic_Congestion_Level": 4.131687242798354,
+     "Road_Accidents_Reported": 3.197530864197531,
+     "Nearby_CCTV_Cameras": 4.51440329218107,
+     "Street_Light_Density": 6.600823045267489,
+     "Public_Complaints": 2.8230452674897117,
+     "Num_Police_Stations_Nearby": 2.765432098765432
+    },
+    "Evening": {
+     "Crime_Severity": 4.481142857142857,
+     "Police_Response_Time_Minutes": 19.685714285714287,
+     "Weather_Visibility_KM": 5.272285714285715,
+     "Traffic_Congestion_Level": 4.085714285714285,
+     "Road_Accidents_Reported": 3.1142857142857143,
+     "Nearby_CCTV_Cameras": 4.714285714285714,
+     "Street_Light_Density": 6.673142857142858,
+     "Public_Complaints": 2.4514285714285715,
+     "Num_Police_Stations_Nearby": 2.657142857142857
+    },
+    "Morning": {
+     "Crime_Severity": 4.253333333333334,
+     "Police_Response_Time_Minutes": 19.88235294117647,
+     "Weather_Visibility_KM": 5.350666666666667,
+     "Traffic_Congestion_Level": 3.9215686274509802,
+     "Road_Accidents_Reported": 3.231372549019608,
+     "Nearby_CCTV_Cameras": 4.6117647058823525,
+     "Street_Light_Density": 6.532156862745097,
+     "Public_Complaints": 2.6980392156862747,
+     "Num_Police_Stations_Nearby": 2.6862745098039214
+    },
+    "Night": {
+     "Crime_Severity": 5.051813471502591,
+     "Police_Response_Time_Minutes": 20.11917098445596,
+     "Weather_Visibility_KM": 5.247668393782384,
+     "Traffic_Congestion_Level": 3.8756476683937824,
+     "Road_Accidents_Reported": 3.005181347150259,
+     "Nearby_CCTV_Cameras": 4.77720207253886,
+     "Street_Light_Density": 6.383937823834198,
+     "Public_Complaints": 2.569948186528497,
+     "Num_Police_Stations_Nearby": 2.694300518134715
+    }
+   }
+  },
+  "Greater Kailash": {
+   "lat": 28.549468419724768,
+   "lon": 77.24237599426604,
+   "area_type": "Residential",
+   "crime_type": "Harassment",
+   "n": 872,
+   "mean": {
+    "Crime_Severity": 4.405389908256881,
+    "Police_Response_Time_Minutes": 19.85091743119266,
+    "Weather_Visibility_KM": 5.45415137614679,
+    "Traffic_Congestion_Level": 3.977064220183486,
+    "Road_Accidents_Reported": 3.176605504587156,
+    "Nearby_CCTV_Cameras": 4.650229357798165,
+    "Street_Light_Density": 6.4688073394495405,
+    "Public_Complaints": 2.6112385321100917,
+    "Num_Police_Stations_Nearby": 2.705275229357798
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.082203389830509,
+     "Police_Response_Time_Minutes": 20.04237288135593,
+     "Weather_Visibility_KM": 5.225847457627118,
+     "Traffic_Congestion_Level": 3.864406779661017,
+     "Road_Accidents_Reported": 3.0762711864406778,
+     "Nearby_CCTV_Cameras": 4.538135593220339,
+     "Street_Light_Density": 6.366525423728813,
+     "Public_Complaints": 2.8262711864406778,
+     "Num_Police_Stations_Nearby": 2.6822033898305087
+    },
+    "Evening": {
+     "Crime_Severity": 4.502688172043011,
+     "Police_Response_Time_Minutes": 19.612903225806452,
+     "Weather_Visibility_KM": 5.812258064516128,
+     "Traffic_Congestion_Level": 4.091397849462366,
+     "Road_Accidents_Reported": 3.4946236559139785,
+     "Nearby_CCTV_Cameras": 4.559139784946237,
+     "Street_Light_Density": 6.391397849462366,
+     "Public_Complaints": 2.827956989247312,
+     "Num_Police_Stations_Nearby": 2.7311827956989245
+    },
+    "Morning": {
+     "Crime_Severity": 4.196774193548387,
+     "Police_Response_Time_Minutes": 19.08467741935484,
+     "Weather_Visibility_KM": 5.635120967741935,
+     "Traffic_Congestion_Level": 4.100806451612903,
+     "Road_Accidents_Reported": 3.149193548387097,
+     "Nearby_CCTV_Cameras": 4.673387096774194,
+     "Street_Light_Density": 6.515322580645161,
+     "Public_Complaints": 2.5120967741935485,
+     "Num_Police_Stations_Nearby": 2.8266129032258065
+    },
+    "Night": {
+     "Crime_Severity": 4.949504950495049,
+     "Police_Response_Time_Minutes": 20.787128712871286,
+     "Weather_Visibility_KM": 5.168960396039605,
+     "Traffic_Congestion_Level": 3.8514851485148514,
+     "Road_Accidents_Reported": 3.0346534653465347,
+     "Nearby_CCTV_Cameras": 4.836633663366337,
+     "Street_Light_Density": 6.602475247524753,
+     "Public_Complaints": 2.282178217821782,
+     "Num_Police_Stations_Nearby": 2.5594059405940595
+    }
+   }
+  },
+  "Hauz Khas": {
+   "lat": 28.549389212458287,
+   "lon": 77.1999047519466,
+   "area_type": "Commercial",
+   "crime_type": "Theft",
+   "n": 899,
+   "mean": {
+    "Crime_Severity": 4.017908787541713,
+    "Police_Response_Time_Minutes": 14.431590656284762,
+    "Weather_Visibility_KM": 5.523615127919911,
+    "Traffic_Congestion_Level": 6.527252502780867,
+    "Road_Accidents_Reported": 4.015572858731924,
+    "Nearby_CCTV_Cameras": 6.996662958843159,
+    "Street_Light_Density": 7.977864293659622,
+    "Public_Complaints": 3.0478309232480534,
+    "Num_Police_Stations_Nearby": 3.4327030033370414
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.6128,
+     "Police_Response_Time_Minutes": 14.064,
+     "Weather_Visibility_KM": 5.52212,
+     "Traffic_Congestion_Level": 6.556,
+     "Road_Accidents_Reported": 3.992,
+     "Nearby_CCTV_Cameras": 6.912,
+     "Street_Light_Density": 7.9172,
+     "Public_Complaints": 3.072,
+     "Num_Police_Stations_Nearby": 3.46
+    },
+    "Evening": {
+     "Crime_Severity": 4.07219512195122,
+     "Police_Response_Time_Minutes": 14.721951219512196,
+     "Weather_Visibility_KM": 5.539658536585366,
+     "Traffic_Congestion_Level": 6.541463414634146,
+     "Road_Accidents_Reported": 3.873170731707317,
+     "Nearby_CCTV_Cameras": 7.087804878048781,
+     "Street_Light_Density": 8.032682926829269,
+     "Public_Complaints": 2.9414634146341463,
+     "Num_Police_Stations_Nearby": 3.4146341463414633
+    },
+    "Morning": {
+     "Crime_Severity": 3.903765690376569,
+     "Police_Response_Time_Minutes": 14.539748953974895,
+     "Weather_Visibility_KM": 5.643305439330544,
+     "Traffic_Congestion_Level": 6.510460251046025,
+     "Road_Accidents_Reported": 4.158995815899582,
+     "Nearby_CCTV_Cameras": 6.920502092050209,
+     "Street_Light_Density": 8.04602510460251,
+     "Public_Complaints": 3.1213389121338913,
+     "Num_Police_Stations_Nearby": 3.3807531380753137
+    },
+    "Night": {
+     "Crime_Severity": 4.590731707317074,
+     "Police_Response_Time_Minutes": 14.463414634146341,
+     "Weather_Visibility_KM": 5.369853658536586,
+     "Traffic_Congestion_Level": 6.4975609756097565,
+     "Road_Accidents_Reported": 4.019512195121951,
+     "Nearby_CCTV_Cameras": 7.097560975609756,
+     "Street_Light_Density": 7.917560975609756,
+     "Public_Complaints": 3.0390243902439025,
+     "Num_Police_Stations_Nearby": 3.478048780487805
+    }
+   }
+  },
+  "IIT Delhi Campus Road": {
+   "lat": 28.54502863028953,
+   "lon": 77.19262082071269,
+   "area_type": "Educational",
+   "crime_type": "Harassment",
+   "n": 898,
+   "mean": {
+    "Crime_Severity": 3.616258351893096,
+    "Police_Response_Time_Minutes": 20.42204899777283,
+    "Weather_Visibility_KM": 5.387282850779511,
+    "Traffic_Congestion_Level": 4.620267260579064,
+    "Road_Accidents_Reported": 3.3151447661469935,
+    "Nearby_CCTV_Cameras": 5.521158129175946,
+    "Street_Light_Density": 7.016369710467706,
+    "Public_Complaints": 2.136971046770601,
+    "Num_Police_Stations_Nearby": 2.4710467706013364
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.497797356828194,
+     "Police_Response_Time_Minutes": 20.34361233480176,
+     "Weather_Visibility_KM": 5.196607929515419,
+     "Traffic_Congestion_Level": 4.71806167400881,
+     "Road_Accidents_Reported": 3.4713656387665197,
+     "Nearby_CCTV_Cameras": 5.466960352422907,
+     "Street_Light_Density": 7.140969162995595,
+     "Public_Complaints": 2.171806167400881,
+     "Num_Police_Stations_Nearby": 2.4273127753303965
+    },
+    "Evening": {
+     "Crime_Severity": 3.646153846153846,
+     "Police_Response_Time_Minutes": 20.384615384615383,
+     "Weather_Visibility_KM": 5.446153846153847,
+     "Traffic_Congestion_Level": 4.6201923076923075,
+     "Road_Accidents_Reported": 3.269230769230769,
+     "Nearby_CCTV_Cameras": 5.538461538461538,
+     "Street_Light_Density": 7.117788461538462,
+     "Public_Complaints": 1.9903846153846154,
+     "Num_Police_Stations_Nearby": 2.4134615384615383
+    },
+    "Morning": {
+     "Crime_Severity": 3.3753846153846156,
+     "Police_Response_Time_Minutes": 20.773076923076925,
+     "Weather_Visibility_KM": 5.314615384615386,
+     "Traffic_Congestion_Level": 4.576923076923077,
+     "Road_Accidents_Reported": 3.2346153846153847,
+     "Nearby_CCTV_Cameras": 5.5346153846153845,
+     "Street_Light_Density": 6.872692307692307,
+     "Public_Complaints": 2.126923076923077,
+     "Num_Police_Stations_Nearby": 2.519230769230769
+    },
+    "Night": {
+     "Crime_Severity": 4.026600985221675,
+     "Police_Response_Time_Minutes": 20.098522167487683,
+     "Weather_Visibility_KM": 5.633251231527095,
+     "Traffic_Congestion_Level": 4.566502463054187,
+     "Road_Accidents_Reported": 3.29064039408867,
+     "Nearby_CCTV_Cameras": 5.54679802955665,
+     "Street_Light_Density": 6.957142857142857,
+     "Public_Complaints": 2.2610837438423643,
+     "Num_Police_Stations_Nearby": 2.5172413793103448
+    }
+   }
+  },
+  "Jamia Nagar": {
+   "lat": 28.562266993413832,
+   "lon": 77.28211826893524,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 911,
+   "mean": {
+    "Crime_Severity": 4.477607025246982,
+    "Police_Response_Time_Minutes": 19.806805708013172,
+    "Weather_Visibility_KM": 5.348068057080132,
+    "Traffic_Congestion_Level": 3.973655323819978,
+    "Road_Accidents_Reported": 3.1361141602634466,
+    "Nearby_CCTV_Cameras": 4.484083424807904,
+    "Street_Light_Density": 6.433918770581778,
+    "Public_Complaints": 2.5323819978046105,
+    "Num_Police_Stations_Nearby": 2.686059275521405
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.163529411764707,
+     "Police_Response_Time_Minutes": 19.988235294117647,
+     "Weather_Visibility_KM": 5.4210980392156864,
+     "Traffic_Congestion_Level": 3.9176470588235293,
+     "Road_Accidents_Reported": 3.1372549019607843,
+     "Nearby_CCTV_Cameras": 4.576470588235294,
+     "Street_Light_Density": 6.497254901960785,
+     "Public_Complaints": 2.545098039215686,
+     "Num_Police_Stations_Nearby": 2.6941176470588237
+    },
+    "Evening": {
+     "Crime_Severity": 4.655897435897437,
+     "Police_Response_Time_Minutes": 19.425641025641024,
+     "Weather_Visibility_KM": 5.317333333333334,
+     "Traffic_Congestion_Level": 4.046153846153846,
+     "Road_Accidents_Reported": 3.0974358974358975,
+     "Nearby_CCTV_Cameras": 4.528205128205128,
+     "Street_Light_Density": 6.353333333333333,
+     "Public_Complaints": 2.4,
+     "Num_Police_Stations_Nearby": 2.7333333333333334
+    },
+    "Morning": {
+     "Crime_Severity": 4.35859375,
+     "Police_Response_Time_Minutes": 19.94921875,
+     "Weather_Visibility_KM": 5.3713671875,
+     "Traffic_Congestion_Level": 4.00390625,
+     "Road_Accidents_Reported": 3.1796875,
+     "Nearby_CCTV_Cameras": 4.30859375,
+     "Street_Light_Density": 6.425000000000001,
+     "Public_Complaints": 2.5625,
+     "Num_Police_Stations_Nearby": 2.66796875
+    },
+    "Night": {
+     "Crime_Severity": 4.847317073170732,
+     "Police_Response_Time_Minutes": 19.765853658536585,
+     "Weather_Visibility_KM": 5.257365853658537,
+     "Traffic_Congestion_Level": 3.9365853658536585,
+     "Road_Accidents_Reported": 3.1170731707317074,
+     "Nearby_CCTV_Cameras": 4.546341463414634,
+     "Street_Light_Density": 6.442926829268294,
+     "Public_Complaints": 2.604878048780488,
+     "Num_Police_Stations_Nearby": 2.653658536585366
+    }
+   }
+  },
+  "Jawaharlal Nehru University Rd": {
+   "lat": 28.538666504211797,
+   "lon": 77.16713573164861,
+   "area_type": "Educational",
+   "crime_type": "Theft",
+   "n": 831,
+   "mean": {
+    "Crime_Severity": 3.5808664259927796,
+    "Police_Response_Time_Minutes": 20.186522262334538,
+    "Weather_Visibility_KM": 5.471323706377858,
+    "Traffic_Congestion_Level": 4.604091456077016,
+    "Road_Accidents_Reported": 3.436823104693141,
+    "Nearby_CCTV_Cameras": 5.5150421179302045,
+    "Street_Light_Density": 7.016125150421179,
+    "Public_Complaints": 2.167268351383875,
+    "Num_Police_Stations_Nearby": 2.490974729241877
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.415207373271889,
+     "Police_Response_Time_Minutes": 20.52073732718894,
+     "Weather_Visibility_KM": 5.389447004608295,
+     "Traffic_Congestion_Level": 4.387096774193548,
+     "Road_Accidents_Reported": 3.2442396313364057,
+     "Nearby_CCTV_Cameras": 5.571428571428571,
+     "Street_Light_Density": 7.062672811059907,
+     "Public_Complaints": 1.9308755760368663,
+     "Num_Police_Stations_Nearby": 2.4377880184331797
+    },
+    "Evening": {
+     "Crime_Severity": 3.480540540540541,
+     "Police_Response_Time_Minutes": 20.16216216216216,
+     "Weather_Visibility_KM": 5.4059459459459465,
+     "Traffic_Congestion_Level": 4.589189189189189,
+     "Road_Accidents_Reported": 3.4756756756756757,
+     "Nearby_CCTV_Cameras": 5.513513513513513,
+     "Street_Light_Density": 7.105945945945946,
+     "Public_Complaints": 2.2432432432432434,
+     "Num_Police_Stations_Nearby": 2.3675675675675674
+    },
+    "Morning": {
+     "Crime_Severity": 3.4638497652582156,
+     "Police_Response_Time_Minutes": 20.36150234741784,
+     "Weather_Visibility_KM": 5.7744131455399055,
+     "Traffic_Congestion_Level": 4.882629107981221,
+     "Road_Accidents_Reported": 3.572769953051643,
+     "Nearby_CCTV_Cameras": 5.436619718309859,
+     "Street_Light_Density": 6.883568075117371,
+     "Public_Complaints": 2.3051643192488265,
+     "Num_Police_Stations_Nearby": 2.511737089201878
+    },
+    "Night": {
+     "Crime_Severity": 3.9486111111111115,
+     "Police_Response_Time_Minutes": 19.699074074074073,
+     "Weather_Visibility_KM": 5.310694444444445,
+     "Traffic_Congestion_Level": 4.560185185185185,
+     "Road_Accidents_Reported": 3.462962962962963,
+     "Nearby_CCTV_Cameras": 5.537037037037037,
+     "Street_Light_Density": 7.023148148148148,
+     "Public_Complaints": 2.2037037037037037,
+     "Num_Police_Stations_Nearby": 2.6296296296296298
+    }
+   }
+  },
+  "Karol Bagh": {
+   "lat": 28.65178020902613,
+   "lon": 77.19107163776724,
+   "area_type": "Market",
+   "crime_type": "Theft",
+   "n": 842,
+   "mean": {
+    "Crime_Severity": 4.795961995249406,
+    "Police_Response_Time_Minutes": 16.926365795724465,
+    "Weather_Visibility_KM": 5.541603325415677,
+    "Traffic_Congestion_Level": 6.862232779097387,
+    "Road_Accidents_Reported": 4.02375296912114,
+    "Nearby_CCTV_Cameras": 5.960807600950119,
+    "Street_Light_Density": 7.556057007125889,
+    "Public_Complaints": 4.4299287410926365,
+    "Num_Police_Stations_Nearby": 3.008313539192399
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.464473684210526,
+     "Police_Response_Time_Minutes": 17.32894736842105,
+     "Weather_Visibility_KM": 5.717850877192983,
+     "Traffic_Congestion_Level": 6.916666666666667,
+     "Road_Accidents_Reported": 4.114035087719298,
+     "Nearby_CCTV_Cameras": 5.894736842105263,
+     "Street_Light_Density": 7.437280701754387,
+     "Public_Complaints": 4.482456140350878,
+     "Num_Police_Stations_Nearby": 2.986842105263158
+    },
+    "Evening": {
+     "Crime_Severity": 4.685714285714286,
+     "Police_Response_Time_Minutes": 16.725714285714286,
+     "Weather_Visibility_KM": 5.305942857142857,
+     "Traffic_Congestion_Level": 6.708571428571428,
+     "Road_Accidents_Reported": 4.051428571428572,
+     "Nearby_CCTV_Cameras": 6.1085714285714285,
+     "Street_Light_Density": 7.4948571428571436,
+     "Public_Complaints": 4.314285714285714,
+     "Num_Police_Stations_Nearby": 2.9828571428571427
+    },
+    "Morning": {
+     "Crime_Severity": 4.560344827586207,
+     "Police_Response_Time_Minutes": 16.504310344827587,
+     "Weather_Visibility_KM": 5.681077586206897,
+     "Traffic_Congestion_Level": 6.956896551724138,
+     "Road_Accidents_Reported": 4.073275862068965,
+     "Nearby_CCTV_Cameras": 5.939655172413793,
+     "Street_Light_Density": 7.618965517241379,
+     "Public_Complaints": 4.521551724137931,
+     "Num_Police_Stations_Nearby": 3.060344827586207
+    },
+    "Night": {
+     "Crime_Severity": 5.518357487922705,
+     "Police_Response_Time_Minutes": 17.1256038647343,
+     "Weather_Visibility_KM": 5.390386473429952,
+     "Traffic_Congestion_Level": 6.826086956521739,
+     "Road_Accidents_Reported": 3.845410628019324,
+     "Nearby_CCTV_Cameras": 5.932367149758454,
+     "Street_Light_Density": 7.668115942028987,
+     "Public_Complaints": 4.367149758454106,
+     "Num_Police_Stations_Nearby": 2.995169082125604
+    }
+   }
+  },
+  "Lajpat Nagar": {
+   "lat": 28.567872888888886,
+   "lon": 77.24339777407408,
+   "area_type": "Market",
+   "crime_type": "Theft",
+   "n": 810,
+   "mean": {
+    "Crime_Severity": 4.814444444444444,
+    "Police_Response_Time_Minutes": 17.320987654320987,
+    "Weather_Visibility_KM": 5.352246913580246,
+    "Traffic_Congestion_Level": 6.837037037037037,
+    "Road_Accidents_Reported": 4.055555555555555,
+    "Nearby_CCTV_Cameras": 5.992592592592593,
+    "Street_Light_Density": 7.435802469135803,
+    "Public_Complaints": 4.579012345679012,
+    "Num_Police_Stations_Nearby": 3.004938271604938
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.431372549019608,
+     "Police_Response_Time_Minutes": 18.372549019607842,
+     "Weather_Visibility_KM": 5.502745098039216,
+     "Traffic_Congestion_Level": 6.794117647058823,
+     "Road_Accidents_Reported": 3.965686274509804,
+     "Nearby_CCTV_Cameras": 6.029411764705882,
+     "Street_Light_Density": 7.427450980392157,
+     "Public_Complaints": 4.544117647058823,
+     "Num_Police_Stations_Nearby": 2.9215686274509802
+    },
+    "Evening": {
+     "Crime_Severity": 4.797524752475248,
+     "Police_Response_Time_Minutes": 17.237623762376238,
+     "Weather_Visibility_KM": 5.501881188118812,
+     "Traffic_Congestion_Level": 6.955445544554456,
+     "Road_Accidents_Reported": 3.910891089108911,
+     "Nearby_CCTV_Cameras": 5.782178217821782,
+     "Street_Light_Density": 7.457920792079208,
+     "Public_Complaints": 4.514851485148514,
+     "Num_Police_Stations_Nearby": 2.995049504950495
+    },
+    "Morning": {
+     "Crime_Severity": 4.644090909090909,
+     "Police_Response_Time_Minutes": 16.62272727272727,
+     "Weather_Visibility_KM": 4.997590909090908,
+     "Traffic_Congestion_Level": 6.759090909090909,
+     "Road_Accidents_Reported": 4.2727272727272725,
+     "Nearby_CCTV_Cameras": 6.25,
+     "Street_Light_Density": 7.3513636363636365,
+     "Public_Complaints": 4.6863636363636365,
+     "Num_Police_Stations_Nearby": 3.172727272727273
+    },
+    "Night": {
+     "Crime_Severity": 5.46141304347826,
+     "Police_Response_Time_Minutes": 17.081521739130434,
+     "Weather_Visibility_KM": 5.445163043478261,
+     "Traffic_Congestion_Level": 6.8478260869565215,
+     "Road_Accidents_Reported": 4.054347826086956,
+     "Nearby_CCTV_Cameras": 5.875,
+     "Street_Light_Density": 7.521739130434782,
+     "Public_Complaints": 4.559782608695652,
+     "Num_Police_Stations_Nearby": 2.907608695652174
+    }
+   }
+  },
+  "Mehrauli": {
+   "lat": 28.51668120909091,
+   "lon": 77.18081529204545,
+   "area_type": "Residential",
+   "crime_type": "Harassment",
+   "n": 880,
+   "mean": {
+    "Crime_Severity": 4.393068181818182,
+    "Police_Response_Time_Minutes": 19.77840909090909,
+    "Weather_Visibility_KM": 5.2483295454545456,
+    "Traffic_Congestion_Level": 4.097727272727273,
+    "Road_Accidents_Reported": 3.206818181818182,
+    "Nearby_CCTV_Cameras": 4.578409090909091,
+    "Street_Light_Density": 6.456931818181818,
+    "Public_Complaints": 2.506818181818182,
+    "Num_Police_Stations_Nearby": 2.753409090909091
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.238152610441767,
+     "Police_Response_Time_Minutes": 20.04016064257028,
+     "Weather_Visibility_KM": 5.21855421686747,
+     "Traffic_Congestion_Level": 4.088353413654619,
+     "Road_Accidents_Reported": 2.9036144578313254,
+     "Nearby_CCTV_Cameras": 4.714859437751004,
+     "Street_Light_Density": 6.438554216867469,
+     "Public_Complaints": 2.5502008032128516,
+     "Num_Police_Stations_Nearby": 2.7269076305220885
+    },
+    "Evening": {
+     "Crime_Severity": 4.281531531531532,
+     "Police_Response_Time_Minutes": 19.67117117117117,
+     "Weather_Visibility_KM": 5.246126126126126,
+     "Traffic_Congestion_Level": 4.004504504504505,
+     "Road_Accidents_Reported": 3.454954954954955,
+     "Nearby_CCTV_Cameras": 4.657657657657658,
+     "Street_Light_Density": 6.4004504504504505,
+     "Public_Complaints": 2.7072072072072073,
+     "Num_Police_Stations_Nearby": 2.671171171171171
+    },
+    "Morning": {
+     "Crime_Severity": 4.113513513513514,
+     "Police_Response_Time_Minutes": 19.594594594594593,
+     "Weather_Visibility_KM": 5.168243243243243,
+     "Traffic_Congestion_Level": 4.216216216216216,
+     "Road_Accidents_Reported": 3.1486486486486487,
+     "Nearby_CCTV_Cameras": 4.423423423423423,
+     "Street_Light_Density": 6.5157657657657655,
+     "Public_Complaints": 2.355855855855856,
+     "Num_Police_Stations_Nearby": 2.779279279279279
+    },
+    "Night": {
+     "Crime_Severity": 5.063636363636364,
+     "Police_Response_Time_Minutes": 19.77540106951872,
+     "Weather_Visibility_KM": 5.385668449197862,
+     "Traffic_Congestion_Level": 4.080213903743315,
+     "Road_Accidents_Reported": 3.3850267379679146,
+     "Nearby_CCTV_Cameras": 4.4866310160427805,
+     "Street_Light_Density": 6.478609625668449,
+     "Public_Complaints": 2.390374331550802,
+     "Num_Police_Stations_Nearby": 2.855614973262032
+    }
+   }
+  },
+  "Munirka": {
+   "lat": 28.554674589655175,
+   "lon": 77.17276484712643,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 870,
+   "mean": {
+    "Crime_Severity": 4.408505747126437,
+    "Police_Response_Time_Minutes": 19.54597701149425,
+    "Weather_Visibility_KM": 5.291678160919541,
+    "Traffic_Congestion_Level": 3.949425287356322,
+    "Road_Accidents_Reported": 3.198850574712644,
+    "Nearby_CCTV_Cameras": 4.458620689655173,
+    "Street_Light_Density": 6.525632183908045,
+    "Public_Complaints": 2.5344827586206895,
+    "Num_Police_Stations_Nearby": 2.735632183908046
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.057203389830509,
+     "Police_Response_Time_Minutes": 19.796610169491526,
+     "Weather_Visibility_KM": 5.6940677966101685,
+     "Traffic_Congestion_Level": 4.012711864406779,
+     "Road_Accidents_Reported": 3.3135593220338984,
+     "Nearby_CCTV_Cameras": 4.372881355932203,
+     "Street_Light_Density": 6.533050847457626,
+     "Public_Complaints": 2.7203389830508473,
+     "Num_Police_Stations_Nearby": 2.7542372881355934
+    },
+    "Evening": {
+     "Crime_Severity": 4.4938202247191015,
+     "Police_Response_Time_Minutes": 19.51685393258427,
+     "Weather_Visibility_KM": 5.192696629213483,
+     "Traffic_Congestion_Level": 3.691011235955056,
+     "Road_Accidents_Reported": 2.865168539325843,
+     "Nearby_CCTV_Cameras": 4.438202247191011,
+     "Street_Light_Density": 6.5314606741573025,
+     "Public_Complaints": 2.4101123595505616,
+     "Num_Police_Stations_Nearby": 2.662921348314607
+    },
+    "Morning": {
+     "Crime_Severity": 4.140234375,
+     "Police_Response_Time_Minutes": 19.41796875,
+     "Weather_Visibility_KM": 4.984296875,
+     "Traffic_Congestion_Level": 3.97265625,
+     "Road_Accidents_Reported": 3.23828125,
+     "Nearby_CCTV_Cameras": 4.55859375,
+     "Street_Light_Density": 6.479296875,
+     "Public_Complaints": 2.65234375,
+     "Num_Police_Stations_Nearby": 2.73046875
+    },
+    "Night": {
+     "Crime_Severity": 5.0905,
+     "Police_Response_Time_Minutes": 19.44,
+     "Weather_Visibility_KM": 5.2984,
+     "Traffic_Congestion_Level": 4.075,
+     "Road_Accidents_Reported": 3.31,
+     "Nearby_CCTV_Cameras": 4.45,
+     "Street_Light_Density": 6.571000000000001,
+     "Public_Complaints": 2.275,
+     "Num_Police_Stations_Nearby": 2.785
+    }
+   }
+  },
+  "NH-48 Delhi-Gurugram Stretch": {
+   "lat": 28.487073481828837,
+   "lon": 77.09080677842907,
+   "area_type": "Isolated/Highway",
+   "crime_type": "Theft",
+   "n": 853,
+   "mean": {
+    "Crime_Severity": 6.731887456037514,
+    "Police_Response_Time_Minutes": 32.161781946072686,
+    "Weather_Visibility_KM": 5.4504337631887445,
+    "Traffic_Congestion_Level": 2.5803048065650644,
+    "Road_Accidents_Reported": 2.7397420867526376,
+    "Nearby_CCTV_Cameras": 1.264947245017585,
+    "Street_Light_Density": 2.436694021101993,
+    "Public_Complaints": 4.388042203985932,
+    "Num_Police_Stations_Nearby": 1.388042203985932
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 6.079372197309416,
+     "Police_Response_Time_Minutes": 32.75336322869955,
+     "Weather_Visibility_KM": 5.581748878923767,
+     "Traffic_Congestion_Level": 2.5739910313901344,
+     "Road_Accidents_Reported": 2.5336322869955157,
+     "Nearby_CCTV_Cameras": 1.1659192825112108,
+     "Street_Light_Density": 2.460986547085202,
+     "Public_Complaints": 4.479820627802691,
+     "Num_Police_Stations_Nearby": 1.2735426008968609
+    },
+    "Evening": {
+     "Crime_Severity": 6.917412935323382,
+     "Police_Response_Time_Minutes": 32.37810945273632,
+     "Weather_Visibility_KM": 5.322189054726369,
+     "Traffic_Congestion_Level": 2.6069651741293534,
+     "Road_Accidents_Reported": 2.8656716417910446,
+     "Nearby_CCTV_Cameras": 1.462686567164179,
+     "Street_Light_Density": 2.3149253731343284,
+     "Public_Complaints": 4.4278606965174125,
+     "Num_Police_Stations_Nearby": 1.328358208955224
+    },
+    "Morning": {
+     "Crime_Severity": 6.3651260504201685,
+     "Police_Response_Time_Minutes": 31.668067226890756,
+     "Weather_Visibility_KM": 5.5602100840336135,
+     "Traffic_Congestion_Level": 2.5798319327731094,
+     "Road_Accidents_Reported": 2.819327731092437,
+     "Nearby_CCTV_Cameras": 1.3025210084033614,
+     "Street_Light_Density": 2.4008403361344537,
+     "Public_Complaints": 4.151260504201681,
+     "Num_Police_Stations_Nearby": 1.495798319327731
+    },
+    "Night": {
+     "Crime_Severity": 7.7554973821989535,
+     "Police_Response_Time_Minutes": 31.858638743455497,
+     "Weather_Visibility_KM": 5.295287958115184,
+     "Traffic_Congestion_Level": 2.56020942408377,
+     "Road_Accidents_Reported": 2.74869109947644,
+     "Nearby_CCTV_Cameras": 1.12565445026178,
+     "Street_Light_Density": 2.5811518324607325,
+     "Public_Complaints": 4.534031413612565,
+     "Num_Police_Stations_Nearby": 1.450261780104712
+    }
+   }
+  },
+  "Najafgarh": {
+   "lat": 28.609306541619155,
+   "lon": 76.98041777879133,
+   "area_type": "Industrial",
+   "crime_type": "Theft",
+   "n": 877,
+   "mean": {
+    "Crime_Severity": 6.040478905359179,
+    "Police_Response_Time_Minutes": 28.06613454960091,
+    "Weather_Visibility_KM": 5.305336374002281,
+    "Traffic_Congestion_Level": 3.599771949828962,
+    "Road_Accidents_Reported": 3.0855188141391108,
+    "Nearby_CCTV_Cameras": 2.6248574686431017,
+    "Street_Light_Density": 4.081185860889396,
+    "Public_Complaints": 3.9806157354618015,
+    "Num_Police_Stations_Nearby": 1.7354618015963512
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 5.599203187250996,
+     "Police_Response_Time_Minutes": 27.90836653386454,
+     "Weather_Visibility_KM": 5.340637450199203,
+     "Traffic_Congestion_Level": 3.6573705179282867,
+     "Road_Accidents_Reported": 3.091633466135458,
+     "Nearby_CCTV_Cameras": 2.7171314741035855,
+     "Street_Light_Density": 4.00398406374502,
+     "Public_Complaints": 3.737051792828685,
+     "Num_Police_Stations_Nearby": 1.745019920318725
+    },
+    "Evening": {
+     "Crime_Severity": 5.990721649484538,
+     "Police_Response_Time_Minutes": 28.18041237113402,
+     "Weather_Visibility_KM": 5.273195876288661,
+     "Traffic_Congestion_Level": 3.448453608247423,
+     "Road_Accidents_Reported": 3.0463917525773194,
+     "Nearby_CCTV_Cameras": 2.520618556701031,
+     "Street_Light_Density": 4.052577319587629,
+     "Public_Complaints": 3.850515463917526,
+     "Num_Police_Stations_Nearby": 1.6649484536082475
+    },
+    "Morning": {
+     "Crime_Severity": 5.637606837606838,
+     "Police_Response_Time_Minutes": 28.20940170940171,
+     "Weather_Visibility_KM": 5.26931623931624,
+     "Traffic_Congestion_Level": 3.8076923076923075,
+     "Road_Accidents_Reported": 3.1965811965811968,
+     "Nearby_CCTV_Cameras": 2.6709401709401708,
+     "Street_Light_Density": 4.171794871794872,
+     "Public_Complaints": 4.316239316239316,
+     "Num_Police_Stations_Nearby": 1.7435897435897436
+    },
+    "Night": {
+     "Crime_Severity": 7.124747474747475,
+     "Police_Response_Time_Minutes": 27.984848484848484,
+     "Weather_Visibility_KM": 5.334646464646464,
+     "Traffic_Congestion_Level": 3.4292929292929295,
+     "Road_Accidents_Reported": 2.984848484848485,
+     "Nearby_CCTV_Cameras": 2.5555555555555554,
+     "Street_Light_Density": 4.1,
+     "Public_Complaints": 4.02020202020202,
+     "Num_Police_Stations_Nearby": 1.7828282828282829
+    }
+   }
+  },
+  "Narela": {
+   "lat": 28.847867181609196,
+   "lon": 77.09300934827586,
+   "area_type": "Isolated/Highway",
+   "crime_type": "Harassment",
+   "n": 870,
+   "mean": {
+    "Crime_Severity": 6.861724137931035,
+    "Police_Response_Time_Minutes": 32.227586206896554,
+    "Weather_Visibility_KM": 5.458402298850574,
+    "Traffic_Congestion_Level": 2.4770114942528734,
+    "Road_Accidents_Reported": 2.659770114942529,
+    "Nearby_CCTV_Cameras": 1.2908045977011495,
+    "Street_Light_Density": 2.52816091954023,
+    "Public_Complaints": 4.4735632183908045,
+    "Num_Police_Stations_Nearby": 1.3574712643678162
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 6.364444444444445,
+     "Police_Response_Time_Minutes": 31.515555555555554,
+     "Weather_Visibility_KM": 5.804666666666668,
+     "Traffic_Congestion_Level": 2.3777777777777778,
+     "Road_Accidents_Reported": 2.68,
+     "Nearby_CCTV_Cameras": 1.3155555555555556,
+     "Street_Light_Density": 2.6391111111111107,
+     "Public_Complaints": 4.346666666666667,
+     "Num_Police_Stations_Nearby": 1.4133333333333333
+    },
+    "Evening": {
+     "Crime_Severity": 6.969841269841271,
+     "Police_Response_Time_Minutes": 32.02116402116402,
+     "Weather_Visibility_KM": 5.466560846560846,
+     "Traffic_Congestion_Level": 2.507936507936508,
+     "Road_Accidents_Reported": 2.8253968253968256,
+     "Nearby_CCTV_Cameras": 1.3015873015873016,
+     "Street_Light_Density": 2.475132275132275,
+     "Public_Complaints": 4.402116402116402,
+     "Num_Police_Stations_Nearby": 1.2962962962962963
+    },
+    "Morning": {
+     "Crime_Severity": 6.302272727272728,
+     "Police_Response_Time_Minutes": 32.17045454545455,
+     "Weather_Visibility_KM": 5.4043560606060606,
+     "Traffic_Congestion_Level": 2.5757575757575757,
+     "Road_Accidents_Reported": 2.628787878787879,
+     "Nearby_CCTV_Cameras": 1.303030303030303,
+     "Street_Light_Density": 2.452272727272727,
+     "Public_Complaints": 4.621212121212121,
+     "Num_Police_Stations_Nearby": 1.4015151515151516
+    },
+    "Night": {
+     "Crime_Severity": 8.107291666666667,
+     "Police_Response_Time_Minutes": 33.34375,
+     "Weather_Visibility_KM": 5.11890625,
+     "Traffic_Congestion_Level": 2.4270833333333335,
+     "Road_Accidents_Reported": 2.515625,
+     "Nearby_CCTV_Cameras": 1.234375,
+     "Street_Light_Density": 2.5546875,
+     "Public_Complaints": 4.489583333333333,
+     "Num_Police_Stations_Nearby": 1.2916666666666667
+    }
+   }
+  },
+  "Nehru Place": {
+   "lat": 28.549485322580644,
+   "lon": 77.25181526152073,
+   "area_type": "Commercial",
+   "crime_type": "Theft",
+   "n": 868,
+   "mean": {
+    "Crime_Severity": 3.930184331797235,
+    "Police_Response_Time_Minutes": 14.508064516129032,
+    "Weather_Visibility_KM": 5.459228110599079,
+    "Traffic_Congestion_Level": 6.418202764976958,
+    "Road_Accidents_Reported": 3.7419354838709675,
+    "Nearby_CCTV_Cameras": 6.986175115207374,
+    "Street_Light_Density": 7.8986175115207375,
+    "Public_Complaints": 3.078341013824885,
+    "Num_Police_Stations_Nearby": 3.4619815668202767
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.768421052631579,
+     "Police_Response_Time_Minutes": 14.425438596491228,
+     "Weather_Visibility_KM": 5.6284210526315785,
+     "Traffic_Congestion_Level": 6.276315789473684,
+     "Road_Accidents_Reported": 3.6096491228070176,
+     "Nearby_CCTV_Cameras": 6.771929824561403,
+     "Street_Light_Density": 7.93640350877193,
+     "Public_Complaints": 2.8991228070175437,
+     "Num_Police_Stations_Nearby": 3.425438596491228
+    },
+    "Evening": {
+     "Crime_Severity": 3.8693877551020406,
+     "Police_Response_Time_Minutes": 13.709183673469388,
+     "Weather_Visibility_KM": 5.473520408163265,
+     "Traffic_Congestion_Level": 6.153061224489796,
+     "Road_Accidents_Reported": 3.938775510204082,
+     "Nearby_CCTV_Cameras": 7.086734693877551,
+     "Street_Light_Density": 7.982142857142857,
+     "Public_Complaints": 3.25,
+     "Num_Police_Stations_Nearby": 3.438775510204082
+    },
+    "Morning": {
+     "Crime_Severity": 3.5568,
+     "Police_Response_Time_Minutes": 14.788,
+     "Weather_Visibility_KM": 5.2137199999999995,
+     "Traffic_Congestion_Level": 6.632,
+     "Road_Accidents_Reported": 3.568,
+     "Nearby_CCTV_Cameras": 7.06,
+     "Street_Light_Density": 7.95,
+     "Public_Complaints": 3.196,
+     "Num_Police_Stations_Nearby": 3.512
+    },
+    "Night": {
+     "Crime_Severity": 4.662886597938145,
+     "Police_Response_Time_Minutes": 15.051546391752577,
+     "Weather_Visibility_KM": 5.562319587628867,
+     "Traffic_Congestion_Level": 6.577319587628866,
+     "Road_Accidents_Reported": 3.922680412371134,
+     "Nearby_CCTV_Cameras": 7.041237113402062,
+     "Street_Light_Density": 7.703608247422681,
+     "Public_Complaints": 2.963917525773196,
+     "Num_Police_Stations_Nearby": 3.463917525773196
+    }
+   }
+  },
+  "Okhla Industrial Area": {
+   "lat": 28.535646855324075,
+   "lon": 77.27435477546297,
+   "area_type": "Industrial",
+   "crime_type": "Theft",
+   "n": 864,
+   "mean": {
+    "Crime_Severity": 6.073379629629629,
+    "Police_Response_Time_Minutes": 28.63310185185185,
+    "Weather_Visibility_KM": 5.382685185185185,
+    "Traffic_Congestion_Level": 3.553240740740741,
+    "Road_Accidents_Reported": 3.127314814814815,
+    "Nearby_CCTV_Cameras": 2.4328703703703702,
+    "Street_Light_Density": 4.008449074074075,
+    "Public_Complaints": 3.957175925925926,
+    "Num_Police_Stations_Nearby": 1.7002314814814814
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 5.819999999999999,
+     "Police_Response_Time_Minutes": 29.345833333333335,
+     "Weather_Visibility_KM": 5.409583333333333,
+     "Traffic_Congestion_Level": 3.7333333333333334,
+     "Road_Accidents_Reported": 3.120833333333333,
+     "Nearby_CCTV_Cameras": 2.4,
+     "Street_Light_Density": 4.062916666666666,
+     "Public_Complaints": 4.029166666666667,
+     "Num_Police_Stations_Nearby": 1.6
+    },
+    "Evening": {
+     "Crime_Severity": 6.005581395348837,
+     "Police_Response_Time_Minutes": 27.94418604651163,
+     "Weather_Visibility_KM": 5.249302325581395,
+     "Traffic_Congestion_Level": 3.516279069767442,
+     "Road_Accidents_Reported": 3.172093023255814,
+     "Nearby_CCTV_Cameras": 2.4511627906976745,
+     "Street_Light_Density": 3.9809302325581393,
+     "Public_Complaints": 3.7116279069767444,
+     "Num_Police_Stations_Nearby": 1.8
+    },
+    "Morning": {
+     "Crime_Severity": 5.587931034482759,
+     "Police_Response_Time_Minutes": 28.24137931034483,
+     "Weather_Visibility_KM": 5.3988362068965525,
+     "Traffic_Congestion_Level": 3.4698275862068964,
+     "Road_Accidents_Reported": 3.228448275862069,
+     "Nearby_CCTV_Cameras": 2.3922413793103448,
+     "Street_Light_Density": 4.028448275862069,
+     "Public_Complaints": 3.978448275862069,
+     "Num_Police_Stations_Nearby": 1.7198275862068966
+    },
+    "Night": {
+     "Crime_Severity": 7.135593220338983,
+     "Police_Response_Time_Minutes": 29.016949152542374,
+     "Weather_Visibility_KM": 5.487062146892655,
+     "Traffic_Congestion_Level": 3.463276836158192,
+     "Road_Accidents_Reported": 2.9491525423728815,
+     "Nearby_CCTV_Cameras": 2.5084745762711864,
+     "Street_Light_Density": 3.94180790960452,
+     "Public_Complaints": 4.129943502824859,
+     "Num_Police_Stations_Nearby": 1.689265536723164
+    }
+   }
+  },
+  "Outer Ring Road (Dhaula Kuan-Naraina)": {
+   "lat": 28.58932808324324,
+   "lon": 77.15325891567568,
+   "area_type": "Isolated/Highway",
+   "crime_type": "Theft",
+   "n": 925,
+   "mean": {
+    "Crime_Severity": 6.807243243243243,
+    "Police_Response_Time_Minutes": 32.54054054054054,
+    "Weather_Visibility_KM": 5.464162162162163,
+    "Traffic_Congestion_Level": 2.4854054054054053,
+    "Road_Accidents_Reported": 2.7524324324324323,
+    "Nearby_CCTV_Cameras": 1.3318918918918918,
+    "Street_Light_Density": 2.540216216216216,
+    "Public_Complaints": 4.462702702702702,
+    "Num_Police_Stations_Nearby": 1.3048648648648649
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 6.2552941176470584,
+     "Police_Response_Time_Minutes": 32.6078431372549,
+     "Weather_Visibility_KM": 5.194588235294118,
+     "Traffic_Congestion_Level": 2.603921568627451,
+     "Road_Accidents_Reported": 2.9490196078431374,
+     "Nearby_CCTV_Cameras": 1.2392156862745098,
+     "Street_Light_Density": 2.464313725490196,
+     "Public_Complaints": 4.513725490196078,
+     "Num_Police_Stations_Nearby": 1.2627450980392156
+    },
+    "Evening": {
+     "Crime_Severity": 6.831753554502369,
+     "Police_Response_Time_Minutes": 31.976303317535546,
+     "Weather_Visibility_KM": 5.56516587677725,
+     "Traffic_Congestion_Level": 2.6113744075829386,
+     "Road_Accidents_Reported": 2.744075829383886,
+     "Nearby_CCTV_Cameras": 1.4028436018957346,
+     "Street_Light_Density": 2.617061611374407,
+     "Public_Complaints": 4.436018957345971,
+     "Num_Police_Stations_Nearby": 1.4075829383886256
+    },
+    "Morning": {
+     "Crime_Severity": 6.502857142857143,
+     "Police_Response_Time_Minutes": 32.7,
+     "Weather_Visibility_KM": 5.531464285714286,
+     "Traffic_Congestion_Level": 2.317857142857143,
+     "Road_Accidents_Reported": 2.7642857142857142,
+     "Nearby_CCTV_Cameras": 1.3357142857142856,
+     "Street_Light_Density": 2.594642857142857,
+     "Public_Complaints": 4.4678571428571425,
+     "Num_Police_Stations_Nearby": 1.2892857142857144
+    },
+    "Night": {
+     "Crime_Severity": 8.040782122905028,
+     "Police_Response_Time_Minutes": 32.86033519553072,
+     "Weather_Visibility_KM": 5.623854748603351,
+     "Traffic_Congestion_Level": 2.430167597765363,
+     "Road_Accidents_Reported": 2.463687150837989,
+     "Nearby_CCTV_Cameras": 1.3743016759776536,
+     "Street_Light_Density": 2.4726256983240225,
+     "Public_Complaints": 4.41340782122905,
+     "Num_Police_Stations_Nearby": 1.2681564245810055
+    }
+   }
+  },
+  "Paharganj": {
+   "lat": 28.644410572077184,
+   "lon": 77.21391892167992,
+   "area_type": "Market",
+   "crime_type": "Theft",
+   "n": 881,
+   "mean": {
+    "Crime_Severity": 4.85005675368899,
+    "Police_Response_Time_Minutes": 17.317820658342793,
+    "Weather_Visibility_KM": 5.408637911464245,
+    "Traffic_Congestion_Level": 6.99205448354143,
+    "Road_Accidents_Reported": 4.163450624290579,
+    "Nearby_CCTV_Cameras": 6.054483541430193,
+    "Street_Light_Density": 7.472985244040863,
+    "Public_Complaints": 4.597048808172532,
+    "Num_Police_Stations_Nearby": 2.9886492622020433
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.662040816326531,
+     "Police_Response_Time_Minutes": 17.110204081632652,
+     "Weather_Visibility_KM": 5.528979591836734,
+     "Traffic_Congestion_Level": 6.877551020408164,
+     "Road_Accidents_Reported": 4.012244897959183,
+     "Nearby_CCTV_Cameras": 5.910204081632653,
+     "Street_Light_Density": 7.526530612244898,
+     "Public_Complaints": 4.710204081632653,
+     "Num_Police_Stations_Nearby": 2.926530612244898
+    },
+    "Evening": {
+     "Crime_Severity": 4.759183673469387,
+     "Police_Response_Time_Minutes": 17.489795918367346,
+     "Weather_Visibility_KM": 5.305816326530612,
+     "Traffic_Congestion_Level": 7.040816326530612,
+     "Road_Accidents_Reported": 4.1020408163265305,
+     "Nearby_CCTV_Cameras": 6.020408163265306,
+     "Street_Light_Density": 7.3372448979591836,
+     "Public_Complaints": 4.658163265306122,
+     "Num_Police_Stations_Nearby": 3.061224489795918
+    },
+    "Morning": {
+     "Crime_Severity": 4.563223140495867,
+     "Police_Response_Time_Minutes": 17.615702479338843,
+     "Weather_Visibility_KM": 5.156570247933884,
+     "Traffic_Congestion_Level": 7.0578512396694215,
+     "Road_Accidents_Reported": 4.223140495867769,
+     "Nearby_CCTV_Cameras": 6.2190082644628095,
+     "Street_Light_Density": 7.584297520661157,
+     "Public_Complaints": 4.520661157024794,
+     "Num_Police_Stations_Nearby": 2.975206611570248
+    },
+    "Night": {
+     "Crime_Severity": 5.523232323232323,
+     "Police_Response_Time_Minutes": 17.04040404040404,
+     "Weather_Visibility_KM": 5.669595959595959,
+     "Traffic_Congestion_Level": 7.005050505050505,
+     "Road_Accidents_Reported": 4.338383838383838,
+     "Nearby_CCTV_Cameras": 6.065656565656566,
+     "Street_Light_Density": 7.4050505050505055,
+     "Public_Complaints": 4.48989898989899,
+     "Num_Police_Stations_Nearby": 3.01010101010101
+    }
+   }
+  },
+  "Pitampura": {
+   "lat": 28.703961536830356,
+   "lon": 77.13165458147321,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 896,
+   "mean": {
+    "Crime_Severity": 4.442857142857143,
+    "Police_Response_Time_Minutes": 20.0859375,
+    "Weather_Visibility_KM": 5.604006696428572,
+    "Traffic_Congestion_Level": 3.9296875,
+    "Road_Accidents_Reported": 3.200892857142857,
+    "Nearby_CCTV_Cameras": 4.421875,
+    "Street_Light_Density": 6.516852678571428,
+    "Public_Complaints": 2.6517857142857144,
+    "Num_Police_Stations_Nearby": 2.6763392857142856
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.314509803921568,
+     "Police_Response_Time_Minutes": 19.79607843137255,
+     "Weather_Visibility_KM": 5.626117647058823,
+     "Traffic_Congestion_Level": 4.019607843137255,
+     "Road_Accidents_Reported": 3.0392156862745097,
+     "Nearby_CCTV_Cameras": 4.462745098039216,
+     "Street_Light_Density": 6.51921568627451,
+     "Public_Complaints": 2.5254901960784313,
+     "Num_Police_Stations_Nearby": 2.627450980392157
+    },
+    "Evening": {
+     "Crime_Severity": 4.38972972972973,
+     "Police_Response_Time_Minutes": 20.481081081081083,
+     "Weather_Visibility_KM": 5.558216216216216,
+     "Traffic_Congestion_Level": 3.772972972972973,
+     "Road_Accidents_Reported": 3.345945945945946,
+     "Nearby_CCTV_Cameras": 4.448648648648649,
+     "Street_Light_Density": 6.5616216216216205,
+     "Public_Complaints": 2.616216216216216,
+     "Num_Police_Stations_Nearby": 2.5783783783783782
+    },
+    "Morning": {
+     "Crime_Severity": 4.108943089430894,
+     "Police_Response_Time_Minutes": 19.76829268292683,
+     "Weather_Visibility_KM": 5.522764227642276,
+     "Traffic_Congestion_Level": 3.9146341463414633,
+     "Road_Accidents_Reported": 3.16260162601626,
+     "Nearby_CCTV_Cameras": 4.361788617886178,
+     "Street_Light_Density": 6.461788617886178,
+     "Public_Complaints": 2.7357723577235773,
+     "Num_Police_Stations_Nearby": 2.8252032520325203
+    },
+    "Night": {
+     "Crime_Severity": 5.036666666666666,
+     "Police_Response_Time_Minutes": 20.461904761904762,
+     "Weather_Visibility_KM": 5.712666666666666,
+     "Traffic_Congestion_Level": 3.9761904761904763,
+     "Road_Accidents_Reported": 3.3142857142857145,
+     "Nearby_CCTV_Cameras": 4.419047619047619,
+     "Street_Light_Density": 6.53904761904762,
+     "Public_Complaints": 2.738095238095238,
+     "Num_Police_Stations_Nearby": 2.6476190476190475
+    }
+   }
+  },
+  "Preet Vihar": {
+   "lat": 28.638886587892898,
+   "lon": 77.29528449941792,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 859,
+   "mean": {
+    "Crime_Severity": 4.399534342258439,
+    "Police_Response_Time_Minutes": 19.925494761350407,
+    "Weather_Visibility_KM": 5.423562281722933,
+    "Traffic_Congestion_Level": 3.973224679860303,
+    "Road_Accidents_Reported": 3.1338766006984864,
+    "Nearby_CCTV_Cameras": 4.549476135040745,
+    "Street_Light_Density": 6.560419091967404,
+    "Public_Complaints": 2.5774155995343424,
+    "Num_Police_Stations_Nearby": 2.735739231664726
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.063033175355451,
+     "Police_Response_Time_Minutes": 20.317535545023695,
+     "Weather_Visibility_KM": 5.384170616113744,
+     "Traffic_Congestion_Level": 3.962085308056872,
+     "Road_Accidents_Reported": 3.255924170616114,
+     "Nearby_CCTV_Cameras": 4.459715639810427,
+     "Street_Light_Density": 6.435071090047394,
+     "Public_Complaints": 2.8199052132701423,
+     "Num_Police_Stations_Nearby": 2.720379146919431
+    },
+    "Evening": {
+     "Crime_Severity": 4.602020202020202,
+     "Police_Response_Time_Minutes": 19.060606060606062,
+     "Weather_Visibility_KM": 5.661969696969696,
+     "Traffic_Congestion_Level": 4.05050505050505,
+     "Road_Accidents_Reported": 3.0606060606060606,
+     "Nearby_CCTV_Cameras": 4.429292929292929,
+     "Street_Light_Density": 6.710101010101011,
+     "Public_Complaints": 2.484848484848485,
+     "Num_Police_Stations_Nearby": 2.7777777777777777
+    },
+    "Morning": {
+     "Crime_Severity": 3.9974683544303793,
+     "Police_Response_Time_Minutes": 19.578059071729957,
+     "Weather_Visibility_KM": 5.397383966244727,
+     "Traffic_Congestion_Level": 4.1645569620253164,
+     "Road_Accidents_Reported": 3.1772151898734178,
+     "Nearby_CCTV_Cameras": 4.713080168776371,
+     "Street_Light_Density": 6.615611814345992,
+     "Public_Complaints": 2.649789029535865,
+     "Num_Police_Stations_Nearby": 2.7721518987341773
+    },
+    "Night": {
+     "Crime_Severity": 4.992018779342723,
+     "Police_Response_Time_Minutes": 20.727699530516432,
+     "Weather_Visibility_KM": 5.270093896713616,
+     "Traffic_Congestion_Level": 3.699530516431925,
+     "Road_Accidents_Reported": 3.032863849765258,
+     "Nearby_CCTV_Cameras": 4.568075117370892,
+     "Street_Light_Density": 6.484037558685445,
+     "Public_Complaints": 2.3427230046948355,
+     "Num_Police_Stations_Nearby": 2.671361502347418
+    }
+   }
+  },
+  "Rajouri Garden": {
+   "lat": 28.646372917365266,
+   "lon": 77.12001925628743,
+   "area_type": "Commercial",
+   "crime_type": "Theft",
+   "n": 835,
+   "mean": {
+    "Crime_Severity": 4.001796407185629,
+    "Police_Response_Time_Minutes": 14.198802395209581,
+    "Weather_Visibility_KM": 5.521904191616766,
+    "Traffic_Congestion_Level": 6.3976047904191615,
+    "Road_Accidents_Reported": 3.98562874251497,
+    "Nearby_CCTV_Cameras": 7.003592814371258,
+    "Street_Light_Density": 8.002155688622754,
+    "Public_Complaints": 3.068263473053892,
+    "Num_Police_Stations_Nearby": 3.5137724550898204
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 3.897107438016529,
+     "Police_Response_Time_Minutes": 14.305785123966942,
+     "Weather_Visibility_KM": 5.330619834710743,
+     "Traffic_Congestion_Level": 6.3429752066115705,
+     "Road_Accidents_Reported": 4.008264462809917,
+     "Nearby_CCTV_Cameras": 7.045454545454546,
+     "Street_Light_Density": 8.052892561983471,
+     "Public_Complaints": 3.020661157024793,
+     "Num_Police_Stations_Nearby": 3.446280991735537
+    },
+    "Evening": {
+     "Crime_Severity": 3.8465408805031442,
+     "Police_Response_Time_Minutes": 13.150943396226415,
+     "Weather_Visibility_KM": 5.375408805031446,
+     "Traffic_Congestion_Level": 6.39622641509434,
+     "Road_Accidents_Reported": 3.993710691823899,
+     "Nearby_CCTV_Cameras": 7.044025157232705,
+     "Street_Light_Density": 7.931446540880504,
+     "Public_Complaints": 2.89937106918239,
+     "Num_Police_Stations_Nearby": 3.7169811320754715
+    },
+    "Morning": {
+     "Crime_Severity": 3.853469387755102,
+     "Police_Response_Time_Minutes": 14.36734693877551,
+     "Weather_Visibility_KM": 5.871061224489796,
+     "Traffic_Congestion_Level": 6.473469387755102,
+     "Road_Accidents_Reported": 3.873469387755102,
+     "Nearby_CCTV_Cameras": 6.9346938775510205,
+     "Street_Light_Density": 8.006122448979593,
+     "Public_Complaints": 3.0775510204081633,
+     "Num_Police_Stations_Nearby": 3.4693877551020407
+    },
+    "Night": {
+     "Crime_Severity": 4.458730158730159,
+     "Police_Response_Time_Minutes": 14.724867724867725,
+     "Weather_Visibility_KM": 5.437460317460318,
+     "Traffic_Congestion_Level": 6.37037037037037,
+     "Road_Accidents_Reported": 4.095238095238095,
+     "Nearby_CCTV_Cameras": 7.005291005291006,
+     "Street_Light_Density": 7.991534391534392,
+     "Public_Complaints": 3.259259259259259,
+     "Num_Police_Stations_Nearby": 3.486772486772487
+    }
+   }
+  },
+  "Rohini": {
+   "lat": 28.749310519208382,
+   "lon": 77.05629349010476,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 859,
+   "mean": {
+    "Crime_Severity": 4.4327124563445865,
+    "Police_Response_Time_Minutes": 19.459837019790456,
+    "Weather_Visibility_KM": 5.555448195576251,
+    "Traffic_Congestion_Level": 3.967403958090803,
+    "Road_Accidents_Reported": 3.258440046565774,
+    "Nearby_CCTV_Cameras": 4.473806752037253,
+    "Street_Light_Density": 6.564377182770663,
+    "Public_Complaints": 2.6263096623981372,
+    "Num_Police_Stations_Nearby": 2.7194412107101282
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.1397489539748955,
+     "Police_Response_Time_Minutes": 19.330543933054393,
+     "Weather_Visibility_KM": 5.572008368200837,
+     "Traffic_Congestion_Level": 3.6652719665271967,
+     "Road_Accidents_Reported": 3.079497907949791,
+     "Nearby_CCTV_Cameras": 4.451882845188284,
+     "Street_Light_Density": 6.563179916317991,
+     "Public_Complaints": 2.5313807531380754,
+     "Num_Police_Stations_Nearby": 2.6861924686192467
+    },
+    "Evening": {
+     "Crime_Severity": 4.525870646766169,
+     "Police_Response_Time_Minutes": 19.398009950248756,
+     "Weather_Visibility_KM": 5.223980099502487,
+     "Traffic_Congestion_Level": 4.034825870646766,
+     "Road_Accidents_Reported": 3.1940298507462686,
+     "Nearby_CCTV_Cameras": 4.36318407960199,
+     "Street_Light_Density": 6.606965174129353,
+     "Public_Complaints": 2.6766169154228856,
+     "Num_Police_Stations_Nearby": 2.6766169154228856
+    },
+    "Morning": {
+     "Crime_Severity": 4.057142857142857,
+     "Police_Response_Time_Minutes": 19.66386554621849,
+     "Weather_Visibility_KM": 5.824075630252102,
+     "Traffic_Congestion_Level": 4.142857142857143,
+     "Road_Accidents_Reported": 3.264705882352941,
+     "Nearby_CCTV_Cameras": 4.357142857142857,
+     "Street_Light_Density": 6.559243697478991,
+     "Public_Complaints": 2.6260504201680672,
+     "Num_Police_Stations_Nearby": 2.764705882352941
+    },
+    "Night": {
+     "Crime_Severity": 5.209944751381215,
+     "Police_Response_Time_Minutes": 19.430939226519335,
+     "Weather_Visibility_KM": 5.548453038674033,
+     "Traffic_Congestion_Level": 4.060773480662983,
+     "Road_Accidents_Reported": 3.5580110497237567,
+     "Nearby_CCTV_Cameras": 4.779005524861878,
+     "Street_Light_Density": 6.525414364640883,
+     "Public_Complaints": 2.696132596685083,
+     "Num_Police_Stations_Nearby": 2.751381215469613
+    }
+   }
+  },
+  "Saket": {
+   "lat": 28.52456980067568,
+   "lon": 77.20653118243244,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 888,
+   "mean": {
+    "Crime_Severity": 4.369707207207207,
+    "Police_Response_Time_Minutes": 19.725225225225227,
+    "Weather_Visibility_KM": 5.26518018018018,
+    "Traffic_Congestion_Level": 4.168918918918919,
+    "Road_Accidents_Reported": 3.244369369369369,
+    "Nearby_CCTV_Cameras": 4.501126126126126,
+    "Street_Light_Density": 6.533108108108108,
+    "Public_Complaints": 2.5731981981981984,
+    "Num_Police_Stations_Nearby": 2.6970720720720722
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.205357142857143,
+     "Police_Response_Time_Minutes": 19.723214285714285,
+     "Weather_Visibility_KM": 5.267991071428571,
+     "Traffic_Congestion_Level": 4.227678571428571,
+     "Road_Accidents_Reported": 3.2544642857142856,
+     "Nearby_CCTV_Cameras": 4.651785714285714,
+     "Street_Light_Density": 6.613839285714286,
+     "Public_Complaints": 2.65625,
+     "Num_Police_Stations_Nearby": 2.7142857142857144
+    },
+    "Evening": {
+     "Crime_Severity": 4.334801762114537,
+     "Police_Response_Time_Minutes": 19.3920704845815,
+     "Weather_Visibility_KM": 5.231409691629956,
+     "Traffic_Congestion_Level": 4.158590308370044,
+     "Road_Accidents_Reported": 3.1145374449339207,
+     "Nearby_CCTV_Cameras": 4.343612334801762,
+     "Street_Light_Density": 6.642290748898679,
+     "Public_Complaints": 2.5991189427312777,
+     "Num_Police_Stations_Nearby": 2.73568281938326
+    },
+    "Morning": {
+     "Crime_Severity": 3.8469298245614034,
+     "Police_Response_Time_Minutes": 20.17982456140351,
+     "Weather_Visibility_KM": 4.9857894736842105,
+     "Traffic_Congestion_Level": 4.078947368421052,
+     "Road_Accidents_Reported": 3.2280701754385963,
+     "Nearby_CCTV_Cameras": 4.464912280701754,
+     "Street_Light_Density": 6.39078947368421,
+     "Public_Complaints": 2.307017543859649,
+     "Num_Police_Stations_Nearby": 2.675438596491228
+    },
+    "Night": {
+     "Crime_Severity": 5.154066985645932,
+     "Police_Response_Time_Minutes": 19.593301435406698,
+     "Weather_Visibility_KM": 5.603636363636363,
+     "Traffic_Congestion_Level": 4.215311004784689,
+     "Road_Accidents_Reported": 3.3923444976076556,
+     "Nearby_CCTV_Cameras": 4.55023923444976,
+     "Street_Light_Density": 6.483253588516747,
+     "Public_Complaints": 2.7464114832535884,
+     "Num_Police_Stations_Nearby": 2.660287081339713
+    }
+   }
+  },
+  "Sanjay Van": {
+   "lat": 28.54067572332943,
+   "lon": 77.1750541500586,
+   "area_type": "Forest/Green Belt",
+   "crime_type": "Theft",
+   "n": 853,
+   "mean": {
+    "Crime_Severity": 7.523798358733879,
+    "Police_Response_Time_Minutes": 36.16764361078546,
+    "Weather_Visibility_KM": 5.315017584994139,
+    "Traffic_Congestion_Level": 1.3856975381008205,
+    "Road_Accidents_Reported": 2.3716295427901524,
+    "Nearby_CCTV_Cameras": 0.6694021101992966,
+    "Street_Light_Density": 1.2472450175849943,
+    "Public_Complaints": 5.533411488862837,
+    "Num_Police_Stations_Nearby": 1.0082063305978899
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 6.9754310344827575,
+     "Police_Response_Time_Minutes": 36.668103448275865,
+     "Weather_Visibility_KM": 5.491767241379311,
+     "Traffic_Congestion_Level": 1.4913793103448276,
+     "Road_Accidents_Reported": 2.418103448275862,
+     "Nearby_CCTV_Cameras": 0.6637931034482759,
+     "Street_Light_Density": 1.3284482758620688,
+     "Public_Complaints": 5.5,
+     "Num_Police_Stations_Nearby": 0.9612068965517241
+    },
+    "Evening": {
+     "Crime_Severity": 7.486470588235294,
+     "Police_Response_Time_Minutes": 35.42941176470588,
+     "Weather_Visibility_KM": 5.572,
+     "Traffic_Congestion_Level": 1.076470588235294,
+     "Road_Accidents_Reported": 2.176470588235294,
+     "Nearby_CCTV_Cameras": 0.7941176470588235,
+     "Street_Light_Density": 1.2288235294117646,
+     "Public_Complaints": 5.429411764705883,
+     "Num_Police_Stations_Nearby": 1.0294117647058822
+    },
+    "Morning": {
+     "Crime_Severity": 7.090000000000001,
+     "Police_Response_Time_Minutes": 36.13846153846154,
+     "Weather_Visibility_KM": 5.0117692307692305,
+     "Traffic_Congestion_Level": 1.4346153846153846,
+     "Road_Accidents_Reported": 2.3807692307692307,
+     "Nearby_CCTV_Cameras": 0.65,
+     "Street_Light_Density": 1.1296153846153847,
+     "Public_Complaints": 5.584615384615384,
+     "Num_Police_Stations_Nearby": 1.0384615384615385
+    },
+    "Night": {
+     "Crime_Severity": 8.813612565445027,
+     "Police_Response_Time_Minutes": 36.2565445026178,
+     "Weather_Visibility_KM": 5.284397905759162,
+     "Traffic_Congestion_Level": 1.4659685863874345,
+     "Road_Accidents_Reported": 2.4764397905759163,
+     "Nearby_CCTV_Cameras": 0.5916230366492147,
+     "Street_Light_Density": 1.325130890052356,
+     "Public_Complaints": 5.596858638743456,
+     "Num_Police_Stations_Nearby": 1.0052356020942408
+    }
+   }
+  },
+  "Sarita Vihar": {
+   "lat": 28.536181577448744,
+   "lon": 77.29358733940775,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 878,
+   "mean": {
+    "Crime_Severity": 4.453986332574032,
+    "Police_Response_Time_Minutes": 19.849658314350798,
+    "Weather_Visibility_KM": 5.367858769931662,
+    "Traffic_Congestion_Level": 4.16628701594533,
+    "Road_Accidents_Reported": 3.215261958997722,
+    "Nearby_CCTV_Cameras": 4.421412300683372,
+    "Street_Light_Density": 6.4859908883826884,
+    "Public_Complaints": 2.644646924829157,
+    "Num_Police_Stations_Nearby": 2.6981776765375853
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.278688524590164,
+     "Police_Response_Time_Minutes": 19.75409836065574,
+     "Weather_Visibility_KM": 5.16733606557377,
+     "Traffic_Congestion_Level": 4.176229508196721,
+     "Road_Accidents_Reported": 3.2172131147540983,
+     "Nearby_CCTV_Cameras": 4.413934426229508,
+     "Street_Light_Density": 6.461885245901638,
+     "Public_Complaints": 2.5163934426229506,
+     "Num_Police_Stations_Nearby": 2.6762295081967213
+    },
+    "Evening": {
+     "Crime_Severity": 4.534183673469388,
+     "Police_Response_Time_Minutes": 20.239795918367346,
+     "Weather_Visibility_KM": 5.62438775510204,
+     "Traffic_Congestion_Level": 4.158163265306122,
+     "Road_Accidents_Reported": 3.2142857142857144,
+     "Nearby_CCTV_Cameras": 4.489795918367347,
+     "Street_Light_Density": 6.505612244897959,
+     "Public_Complaints": 2.5510204081632653,
+     "Num_Police_Stations_Nearby": 2.5816326530612246
+    },
+    "Morning": {
+     "Crime_Severity": 4.1377510040160645,
+     "Police_Response_Time_Minutes": 19.96385542168675,
+     "Weather_Visibility_KM": 5.518232931726907,
+     "Traffic_Congestion_Level": 4.176706827309237,
+     "Road_Accidents_Reported": 3.0602409638554215,
+     "Nearby_CCTV_Cameras": 4.385542168674699,
+     "Street_Light_Density": 6.3767068273092375,
+     "Public_Complaints": 2.6666666666666665,
+     "Num_Police_Stations_Nearby": 2.7630522088353415
+    },
+    "Night": {
+     "Crime_Severity": 5.013756613756614,
+     "Police_Response_Time_Minutes": 19.417989417989418,
+     "Weather_Visibility_KM": 5.162592592592594,
+     "Traffic_Congestion_Level": 4.148148148148148,
+     "Road_Accidents_Reported": 3.417989417989418,
+     "Nearby_CCTV_Cameras": 4.407407407407407,
+     "Street_Light_Density": 6.64074074074074,
+     "Public_Complaints": 2.878306878306878,
+     "Num_Police_Stations_Nearby": 2.761904761904762
+    }
+   }
+  },
+  "Shahdara": {
+   "lat": 28.66863149002218,
+   "lon": 77.2884428946785,
+   "area_type": "Industrial",
+   "crime_type": "Theft",
+   "n": 902,
+   "mean": {
+    "Crime_Severity": 6.068514412416851,
+    "Police_Response_Time_Minutes": 28.52771618625277,
+    "Weather_Visibility_KM": 5.627738359201774,
+    "Traffic_Congestion_Level": 3.5609756097560976,
+    "Road_Accidents_Reported": 2.9279379157427936,
+    "Nearby_CCTV_Cameras": 2.5864745011086474,
+    "Street_Light_Density": 3.998337028824834,
+    "Public_Complaints": 3.8980044345898004,
+    "Num_Police_Stations_Nearby": 1.6563192904656319
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 5.519354838709678,
+     "Police_Response_Time_Minutes": 29.055299539170505,
+     "Weather_Visibility_KM": 5.602995391705068,
+     "Traffic_Congestion_Level": 3.442396313364055,
+     "Road_Accidents_Reported": 2.7465437788018434,
+     "Nearby_CCTV_Cameras": 2.5622119815668203,
+     "Street_Light_Density": 4.11520737327189,
+     "Public_Complaints": 3.8986175115207375,
+     "Num_Police_Stations_Nearby": 1.543778801843318
+    },
+    "Evening": {
+     "Crime_Severity": 6.085067873303167,
+     "Police_Response_Time_Minutes": 28.199095022624434,
+     "Weather_Visibility_KM": 5.738280542986424,
+     "Traffic_Congestion_Level": 3.5610859728506785,
+     "Road_Accidents_Reported": 3.0,
+     "Nearby_CCTV_Cameras": 2.425339366515837,
+     "Street_Light_Density": 3.9294117647058826,
+     "Public_Complaints": 3.8823529411764706,
+     "Num_Police_Stations_Nearby": 1.7647058823529411
+    },
+    "Morning": {
+     "Crime_Severity": 5.821031746031746,
+     "Police_Response_Time_Minutes": 28.753968253968253,
+     "Weather_Visibility_KM": 5.454642857142856,
+     "Traffic_Congestion_Level": 3.5555555555555554,
+     "Road_Accidents_Reported": 2.988095238095238,
+     "Nearby_CCTV_Cameras": 2.7817460317460316,
+     "Street_Light_Density": 3.905952380952381,
+     "Public_Complaints": 3.9404761904761907,
+     "Num_Police_Stations_Nearby": 1.5952380952380953
+    },
+    "Night": {
+     "Crime_Severity": 6.9075471698113216,
+     "Police_Response_Time_Minutes": 28.06132075471698,
+     "Weather_Visibility_KM": 5.743584905660377,
+     "Traffic_Congestion_Level": 3.688679245283019,
+     "Road_Accidents_Reported": 2.9669811320754715,
+     "Nearby_CCTV_Cameras": 2.547169811320755,
+     "Street_Light_Density": 4.060377358490566,
+     "Public_Complaints": 3.8632075471698113,
+     "Num_Police_Stations_Nearby": 1.7311320754716981
+    }
+   }
+  },
+  "Sultanpur (Green Belt)": {
+   "lat": 28.498783969178078,
+   "lon": 77.14983627054794,
+   "area_type": "Forest/Green Belt",
+   "crime_type": "Theft",
+   "n": 876,
+   "mean": {
+    "Crime_Severity": 7.622031963470319,
+    "Police_Response_Time_Minutes": 35.26255707762557,
+    "Weather_Visibility_KM": 5.3215296803652965,
+    "Traffic_Congestion_Level": 1.447488584474886,
+    "Road_Accidents_Reported": 2.4954337899543377,
+    "Nearby_CCTV_Cameras": 0.678082191780822,
+    "Street_Light_Density": 1.1779680365296805,
+    "Public_Complaints": 5.529680365296803,
+    "Num_Police_Stations_Nearby": 1.0833333333333333
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 7.084033613445378,
+     "Police_Response_Time_Minutes": 35.294117647058826,
+     "Weather_Visibility_KM": 5.361470588235295,
+     "Traffic_Congestion_Level": 1.546218487394958,
+     "Road_Accidents_Reported": 2.3529411764705883,
+     "Nearby_CCTV_Cameras": 0.7689075630252101,
+     "Street_Light_Density": 1.0798319327731092,
+     "Public_Complaints": 5.642857142857143,
+     "Num_Police_Stations_Nearby": 1.1050420168067228
+    },
+    "Evening": {
+     "Crime_Severity": 7.718229166666667,
+     "Police_Response_Time_Minutes": 35.078125,
+     "Weather_Visibility_KM": 5.301770833333333,
+     "Traffic_Congestion_Level": 1.2239583333333333,
+     "Road_Accidents_Reported": 2.5,
+     "Nearby_CCTV_Cameras": 0.6302083333333334,
+     "Street_Light_Density": 1.2328124999999999,
+     "Public_Complaints": 5.40625,
+     "Num_Police_Stations_Nearby": 1.0677083333333333
+    },
+    "Morning": {
+     "Crime_Severity": 7.060173160173161,
+     "Police_Response_Time_Minutes": 35.099567099567096,
+     "Weather_Visibility_KM": 5.319696969696969,
+     "Traffic_Congestion_Level": 1.5627705627705628,
+     "Road_Accidents_Reported": 2.7662337662337664,
+     "Nearby_CCTV_Cameras": 0.6796536796536796,
+     "Street_Light_Density": 1.2415584415584413,
+     "Public_Complaints": 5.376623376623376,
+     "Num_Police_Stations_Nearby": 1.1341991341991342
+    },
+    "Night": {
+     "Crime_Severity": 8.735348837209301,
+     "Police_Response_Time_Minutes": 35.56744186046512,
+     "Weather_Visibility_KM": 5.29693023255814,
+     "Traffic_Congestion_Level": 1.413953488372093,
+     "Road_Accidents_Reported": 2.358139534883721,
+     "Nearby_CCTV_Cameras": 0.6186046511627907,
+     "Street_Light_Density": 1.1693023255813952,
+     "Public_Complaints": 5.67906976744186,
+     "Num_Police_Stations_Nearby": 1.0186046511627906
+    }
+   }
+  },
+  "Tughlaqabad": {
+   "lat": 28.50829203267211,
+   "lon": 77.26624111785299,
+   "area_type": "Isolated/Highway",
+   "crime_type": "Theft",
+   "n": 857,
+   "mean": {
+    "Crime_Severity": 6.829171528588097,
+    "Police_Response_Time_Minutes": 32.9463243873979,
+    "Weather_Visibility_KM": 5.579124854142356,
+    "Traffic_Congestion_Level": 2.599766627771295,
+    "Road_Accidents_Reported": 2.731621936989498,
+    "Nearby_CCTV_Cameras": 1.3045507584597433,
+    "Street_Light_Density": 2.5156359393232206,
+    "Public_Complaints": 4.500583430571762,
+    "Num_Police_Stations_Nearby": 1.3173862310385065
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 6.424472573839662,
+     "Police_Response_Time_Minutes": 33.016877637130804,
+     "Weather_Visibility_KM": 5.825147679324894,
+     "Traffic_Congestion_Level": 2.70042194092827,
+     "Road_Accidents_Reported": 2.7721518987341773,
+     "Nearby_CCTV_Cameras": 1.40084388185654,
+     "Street_Light_Density": 2.538818565400844,
+     "Public_Complaints": 4.6455696202531644,
+     "Num_Police_Stations_Nearby": 1.3080168776371308
+    },
+    "Evening": {
+     "Crime_Severity": 6.794859813084112,
+     "Police_Response_Time_Minutes": 33.58878504672897,
+     "Weather_Visibility_KM": 5.625560747663551,
+     "Traffic_Congestion_Level": 2.364485981308411,
+     "Road_Accidents_Reported": 2.630841121495327,
+     "Nearby_CCTV_Cameras": 1.341121495327103,
+     "Street_Light_Density": 2.4808411214953265,
+     "Public_Complaints": 4.626168224299065,
+     "Num_Police_Stations_Nearby": 1.294392523364486
+    },
+    "Morning": {
+     "Crime_Severity": 6.413392857142857,
+     "Police_Response_Time_Minutes": 32.513392857142854,
+     "Weather_Visibility_KM": 5.491517857142857,
+     "Traffic_Congestion_Level": 2.6205357142857144,
+     "Road_Accidents_Reported": 2.7767857142857144,
+     "Nearby_CCTV_Cameras": 1.3214285714285714,
+     "Street_Light_Density": 2.5071428571428576,
+     "Public_Complaints": 4.183035714285714,
+     "Num_Police_Stations_Nearby": 1.2946428571428572
+    },
+    "Night": {
+     "Crime_Severity": 7.9082417582417595,
+     "Police_Response_Time_Minutes": 32.63186813186813,
+     "Weather_Visibility_KM": 5.311978021978022,
+     "Traffic_Congestion_Level": 2.71978021978022,
+     "Road_Accidents_Reported": 2.741758241758242,
+     "Nearby_CCTV_Cameras": 1.1153846153846154,
+     "Street_Light_Density": 2.5368131868131867,
+     "Public_Complaints": 4.554945054945055,
+     "Num_Police_Stations_Nearby": 1.3846153846153846
+    }
+   }
+  },
+  "Vasant Kunj": {
+   "lat": 28.520261505084747,
+   "lon": 77.15899350847457,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 885,
+   "mean": {
+    "Crime_Severity": 4.358305084745763,
+    "Police_Response_Time_Minutes": 19.67909604519774,
+    "Weather_Visibility_KM": 5.370497175141242,
+    "Traffic_Congestion_Level": 4.030508474576271,
+    "Road_Accidents_Reported": 3.2508474576271187,
+    "Nearby_CCTV_Cameras": 4.51638418079096,
+    "Street_Light_Density": 6.550395480225989,
+    "Public_Complaints": 2.6519774011299435,
+    "Num_Police_Stations_Nearby": 2.743502824858757
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.1066666666666665,
+     "Police_Response_Time_Minutes": 19.979166666666668,
+     "Weather_Visibility_KM": 5.106999999999999,
+     "Traffic_Congestion_Level": 4.2125,
+     "Road_Accidents_Reported": 3.3958333333333335,
+     "Nearby_CCTV_Cameras": 4.395833333333333,
+     "Street_Light_Density": 6.588750000000001,
+     "Public_Complaints": 2.4625,
+     "Num_Police_Stations_Nearby": 2.691666666666667
+    },
+    "Evening": {
+     "Crime_Severity": 4.455897435897437,
+     "Police_Response_Time_Minutes": 19.615384615384617,
+     "Weather_Visibility_KM": 5.322666666666667,
+     "Traffic_Congestion_Level": 3.9025641025641025,
+     "Road_Accidents_Reported": 3.164102564102564,
+     "Nearby_CCTV_Cameras": 4.615384615384615,
+     "Street_Light_Density": 6.477435897435897,
+     "Public_Complaints": 2.7794871794871794,
+     "Num_Police_Stations_Nearby": 2.7948717948717947
+    },
+    "Morning": {
+     "Crime_Severity": 3.9236514522821575,
+     "Police_Response_Time_Minutes": 19.514522821576765,
+     "Weather_Visibility_KM": 5.628132780082988,
+     "Traffic_Congestion_Level": 4.1078838174273855,
+     "Road_Accidents_Reported": 3.219917012448133,
+     "Nearby_CCTV_Cameras": 4.560165975103734,
+     "Street_Light_Density": 6.5315352697095435,
+     "Public_Complaints": 2.6348547717842323,
+     "Num_Police_Stations_Nearby": 2.763485477178423
+    },
+    "Night": {
+     "Crime_Severity": 5.057416267942584,
+     "Police_Response_Time_Minutes": 19.583732057416267,
+     "Weather_Visibility_KM": 5.420622009569377,
+     "Traffic_Congestion_Level": 3.851674641148325,
+     "Road_Accidents_Reported": 3.200956937799043,
+     "Nearby_CCTV_Cameras": 4.511961722488039,
+     "Street_Light_Density": 6.596172248803828,
+     "Public_Complaints": 2.770334928229665,
+     "Num_Police_Stations_Nearby": 2.7320574162679425
+    }
+   }
+  },
+  "Vasant Vihar": {
+   "lat": 28.560247041988948,
+   "lon": 77.15906593480663,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 905,
+   "mean": {
+    "Crime_Severity": 4.445082872928177,
+    "Police_Response_Time_Minutes": 19.539226519337017,
+    "Weather_Visibility_KM": 5.425370165745856,
+    "Traffic_Congestion_Level": 4.0320441988950275,
+    "Road_Accidents_Reported": 3.166850828729282,
+    "Nearby_CCTV_Cameras": 4.443093922651934,
+    "Street_Light_Density": 6.508729281767955,
+    "Public_Complaints": 2.614364640883978,
+    "Num_Police_Stations_Nearby": 2.765745856353591
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.158078602620088,
+     "Police_Response_Time_Minutes": 19.558951965065503,
+     "Weather_Visibility_KM": 5.26886462882096,
+     "Traffic_Congestion_Level": 4.14410480349345,
+     "Road_Accidents_Reported": 3.1441048034934496,
+     "Nearby_CCTV_Cameras": 4.467248908296943,
+     "Street_Light_Density": 6.452401746724891,
+     "Public_Complaints": 2.5807860262008733,
+     "Num_Police_Stations_Nearby": 2.8384279475982535
+    },
+    "Evening": {
+     "Crime_Severity": 4.413432835820895,
+     "Police_Response_Time_Minutes": 20.074626865671643,
+     "Weather_Visibility_KM": 5.135273631840795,
+     "Traffic_Congestion_Level": 3.9950248756218905,
+     "Road_Accidents_Reported": 3.243781094527363,
+     "Nearby_CCTV_Cameras": 4.5721393034825875,
+     "Street_Light_Density": 6.346268656716418,
+     "Public_Complaints": 2.5074626865671643,
+     "Num_Police_Stations_Nearby": 2.6517412935323383
+    },
+    "Morning": {
+     "Crime_Severity": 4.146774193548388,
+     "Police_Response_Time_Minutes": 18.93951612903226,
+     "Weather_Visibility_KM": 5.431572580645162,
+     "Traffic_Congestion_Level": 3.903225806451613,
+     "Road_Accidents_Reported": 3.217741935483871,
+     "Nearby_CCTV_Cameras": 4.42741935483871,
+     "Street_Light_Density": 6.6403225806451625,
+     "Public_Complaints": 2.7298387096774195,
+     "Num_Police_Stations_Nearby": 2.7943548387096775
+    },
+    "Night": {
+     "Crime_Severity": 5.088546255506608,
+     "Police_Response_Time_Minutes": 19.70044052863436,
+     "Weather_Visibility_KM": 5.833348017621145,
+     "Traffic_Congestion_Level": 4.092511013215859,
+     "Road_Accidents_Reported": 3.066079295154185,
+     "Nearby_CCTV_Cameras": 4.3215859030837,
+     "Street_Light_Density": 6.565638766519824,
+     "Public_Complaints": 2.616740088105727,
+     "Num_Police_Stations_Nearby": 2.762114537444934
+    }
+   }
+  },
+  "Yamuna Biodiversity Park": {
+   "lat": 28.77863115575621,
+   "lon": 77.23136764785552,
+   "area_type": "Forest/Green Belt",
+   "crime_type": "Theft",
+   "n": 886,
+   "mean": {
+    "Crime_Severity": 7.648194130925508,
+    "Police_Response_Time_Minutes": 35.65462753950339,
+    "Weather_Visibility_KM": 5.383656884875847,
+    "Traffic_Congestion_Level": 1.3510158013544018,
+    "Road_Accidents_Reported": 2.4864559819413095,
+    "Nearby_CCTV_Cameras": 0.7155756207674944,
+    "Street_Light_Density": 1.2501128668171557,
+    "Public_Complaints": 5.436794582392777,
+    "Num_Police_Stations_Nearby": 1.0304740406320543
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 7.133739837398374,
+     "Police_Response_Time_Minutes": 35.800813008130085,
+     "Weather_Visibility_KM": 5.189471544715448,
+     "Traffic_Congestion_Level": 1.2357723577235773,
+     "Road_Accidents_Reported": 2.386178861788618,
+     "Nearby_CCTV_Cameras": 0.6910569105691057,
+     "Street_Light_Density": 1.2378048780487805,
+     "Public_Complaints": 5.540650406504065,
+     "Num_Police_Stations_Nearby": 1.08130081300813
+    },
+    "Evening": {
+     "Crime_Severity": 7.575842696629212,
+     "Police_Response_Time_Minutes": 35.02247191011236,
+     "Weather_Visibility_KM": 5.426685393258428,
+     "Traffic_Congestion_Level": 1.4719101123595506,
+     "Road_Accidents_Reported": 2.606741573033708,
+     "Nearby_CCTV_Cameras": 0.7471910112359551,
+     "Street_Light_Density": 1.2679775280898875,
+     "Public_Complaints": 5.662921348314606,
+     "Num_Police_Stations_Nearby": 1.0786516853932584
+    },
+    "Morning": {
+     "Crime_Severity": 7.105220883534136,
+     "Police_Response_Time_Minutes": 35.94779116465863,
+     "Weather_Visibility_KM": 5.458273092369478,
+     "Traffic_Congestion_Level": 1.3493975903614457,
+     "Road_Accidents_Reported": 2.502008032128514,
+     "Nearby_CCTV_Cameras": 0.7349397590361446,
+     "Street_Light_Density": 1.2550200803212852,
+     "Public_Complaints": 5.236947791164659,
+     "Num_Police_Stations_Nearby": 0.9879518072289156
+    },
+    "Night": {
+     "Crime_Severity": 8.937558685446009,
+     "Police_Response_Time_Minutes": 35.671361502347416,
+     "Weather_Visibility_KM": 5.484741784037559,
+     "Traffic_Congestion_Level": 1.3849765258215962,
+     "Road_Accidents_Reported": 2.483568075117371,
+     "Nearby_CCTV_Cameras": 0.6948356807511737,
+     "Street_Light_Density": 1.2436619718309858,
+     "Public_Complaints": 5.36150234741784,
+     "Num_Police_Stations_Nearby": 0.9812206572769953
+    }
+   }
+  },
+  "Yamuna Vihar": {
+   "lat": 28.694524074235808,
+   "lon": 77.27026551310043,
+   "area_type": "Residential",
+   "crime_type": "Theft",
+   "n": 916,
+   "mean": {
+    "Crime_Severity": 4.298144104803494,
+    "Police_Response_Time_Minutes": 20.15938864628821,
+    "Weather_Visibility_KM": 5.402194323144105,
+    "Traffic_Congestion_Level": 4.078602620087336,
+    "Road_Accidents_Reported": 3.3580786026200875,
+    "Nearby_CCTV_Cameras": 4.539301310043668,
+    "Street_Light_Density": 6.512008733624454,
+    "Public_Complaints": 2.581877729257642,
+    "Num_Police_Stations_Nearby": 2.710698689956332
+   },
+   "by_time": {
+    "Afternoon": {
+     "Crime_Severity": 4.031330472103004,
+     "Police_Response_Time_Minutes": 20.330472103004293,
+     "Weather_Visibility_KM": 5.308025751072961,
+     "Traffic_Congestion_Level": 3.9141630901287554,
+     "Road_Accidents_Reported": 3.4377682403433476,
+     "Nearby_CCTV_Cameras": 4.570815450643777,
+     "Street_Light_Density": 6.382403433476395,
+     "Public_Complaints": 2.6781115879828326,
+     "Num_Police_Stations_Nearby": 2.6781115879828326
+    },
+    "Evening": {
+     "Crime_Severity": 4.537073170731707,
+     "Police_Response_Time_Minutes": 20.01951219512195,
+     "Weather_Visibility_KM": 5.572975609756098,
+     "Traffic_Congestion_Level": 4.073170731707317,
+     "Road_Accidents_Reported": 3.2780487804878047,
+     "Nearby_CCTV_Cameras": 4.648780487804878,
+     "Street_Light_Density": 6.514634146341463,
+     "Public_Complaints": 2.6439024390243904,
+     "Num_Police_Stations_Nearby": 2.726829268292683
+    },
+    "Morning": {
+     "Crime_Severity": 3.9138059701492534,
+     "Police_Response_Time_Minutes": 20.152985074626866,
+     "Weather_Visibility_KM": 5.507350746268656,
+     "Traffic_Congestion_Level": 4.126865671641791,
+     "Road_Accidents_Reported": 3.279850746268657,
+     "Nearby_CCTV_Cameras": 4.514925373134329,
+     "Street_Light_Density": 6.525,
+     "Public_Complaints": 2.4141791044776117,
+     "Num_Police_Stations_Nearby": 2.6865671641791047
+    },
+    "Night": {
+     "Crime_Severity": 4.851428571428571,
+     "Police_Response_Time_Minutes": 20.114285714285714,
+     "Weather_Visibility_KM": 5.205761904761905,
+     "Traffic_Congestion_Level": 4.204761904761905,
+     "Road_Accidents_Reported": 3.447619047619048,
+     "Nearby_CCTV_Cameras": 4.428571428571429,
+     "Street_Light_Density": 6.636666666666666,
+     "Public_Complaints": 2.6285714285714286,
+     "Num_Police_Stations_Nearby": 2.761904761904762
+    }
+   }
+  }
+ },
+ "weather_visibility": {
+  "Cloudy": 4.996590182648402,
+  "Foggy": 1.4013713638080845,
+  "Rainy": 2.479894108586831,
+  "Sunny": 8.011870238699847
+ }
+}

@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RouteShield AI — Intelligent Safety-Aware Route Recommendation System</title>
+
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+    <!-- LEAFLET MAP CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- AUTH PAGE CSS -->
+    <style>
+        .auth-gate {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #edf9f5, #fff, #faf4eb);
+        }
+
+        .auth-container {
+            width: 100%;
+            max-width: 460px;
+        }
+
+        .auth-box {
+            padding: 38px;
+            background: #fff;
+            border: 1px solid #dfe7e3;
+            border-radius: 22px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+        }
+
+        .auth-box h2 {
+            text-align: center;
+            font-size: 30px;
+            color: #1d5749;
+        }
+
+        .auth-subtitle {
+            margin: 8px 0 25px;
+            text-align: center;
+            color: #6b7672;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .auth-box label {
+            display: block;
+            margin: 15px 0 7px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .auth-box input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #dfe7e3;
+            border-radius: 10px;
+            outline: none;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .auth-box input:focus {
+            border-color: #256b5a;
+            box-shadow: 0 0 0 4px rgba(37, 107, 90, .1);
+        }
+
+        .auth-button {
+            width: 100%;
+            margin-top: 22px;
+            padding: 14px;
+            border: 0;
+            border-radius: 10px;
+            background: #256b5a;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .auth-button:hover {
+            background: #1d5749;
+        }
+
+        .switch-text {
+            margin-top: 20px;
+            text-align: center;
+            color: #6b7672;
+            font-size: 13px;
+        }
+
+        .switch-button {
+            border: 0;
+            background: none;
+            color: #256b5a;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .auth-message {
+            min-height: 20px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .otp-icon {
+            width: 65px;
+            height: 65px;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #e8f5f0;
+            color: #256b5a;
+            font-size: 30px;
+        }
+
+        #otpInput {
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 6px;
+            font-weight: 700;
+        }
+
+        .auth-brand {
+            text-align: center;
+            color: #256b5a;
+            font-weight: 800;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .auth-tabs {
+            display: flex;
+            gap: 8px;
+            padding: 5px;
+            margin-bottom: 22px;
+            background: #f1f6f3;
+            border-radius: 12px;
+        }
+
+        .auth-tab {
+            flex: 1;
+            border: 0;
+            padding: 10px;
+            border-radius: 9px;
+            background: transparent;
+            color: #64746f;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .auth-tab.active {
+            background: #fff;
+            color: #256b5a;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+        }
+
+        @media(max-width: 500px) {
+            .auth-box {
+                padding: 28px 22px;
+            }
+
+            .auth-box h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+{% if not session.get("user_id") %}
+
+<!-- =========================================================
+     AUTHENTICATION SECTION
+========================================================= -->
+
+<section class="auth-gate" id="authGate">
+
+    <div class="auth-container">
+
+        {% if auth_page == "otp" %}
+
+        <!-- OTP PAGE -->
+
+        <div class="auth-box" id="otpBox">
+
+            <div class="otp-icon">
+                ✉
+            </div>
+
+            <div class="auth-brand">
+                🛡️ RouteShield AI
+            </div>
+
+            <h2>
+                Verify Your Email
+            </h2>
+
+            <p class="auth-subtitle">
+                Enter the 6-digit OTP sent to
+                <strong id="otpEmail">{{ otp_email }}</strong>.
+            </p>
+
+            <form id="otpForm">
+
+                <label for="otpInput">
+                    Verification OTP
+                </label>
+
+                <input
+                    type="text"
+                    id="otpInput"
+                    maxlength="6"
+                    inputmode="numeric"
+                    pattern="[0-9]{6}"
+                    placeholder="Enter 6-digit OTP"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    Verify OTP
+                </button>
+
+            </form>
+
+            <p class="switch-text">
+
+                Didn't receive it?
+
+                <button
+                    type="button"
+                    class="switch-button"
+                    id="resendOtp"
+                >
+                    Resend OTP
+                </button>
+
+            </p>
+
+            <p class="switch-text">
+
+                <button
+                    type="button"
+                    class="switch-button"
+                    id="backToAuth"
+                >
+                    ← Back to Sign In
+                </button>
+
+            </p>
+
+            <p
+                class="auth-message"
+                id="otpMessage"
+            ></p>
+
+        </div>
+
+
+        {% else %}
+
+
+        <!-- =====================================================
+             LOGIN BOX
+        ====================================================== -->
+
+        <div
+            class="auth-box"
+            id="loginBox"
+        >
+
+            <div class="auth-brand">
+                🛡️ RouteShield AI
+            </div>
+
+            <div class="auth-tabs">
+
+                <button
+                    type="button"
+                    class="auth-tab active"
+                    id="loginTab"
+                >
+                    Sign In
+                </button>
+
+                <button
+                    type="button"
+                    class="auth-tab"
+                    id="registerTab"
+                >
+                    Create Account
+                </button>
+
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p class="auth-subtitle">
+                Sign in to access your safety-aware route planner.
+            </p>
+
+
+            <form id="loginForm">
+
+                <label for="loginEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    Sign In
+                </button>
+
+            </form>
+
+
+            <p class="switch-text">
+
+                New here?
+
+                <button
+                    type="button"
+                    class="switch-button"
+                    id="showRegister"
+                >
+                    Create Account
+                </button>
+
+            </p>
+
+
+            <p
+                class="auth-message"
+                id="loginMessage"
+            ></p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             REGISTER BOX
+        ====================================================== -->
+
+        <div
+            class="auth-box"
+            id="registerBox"
+            style="display:none;"
+        >
+
+            <div class="auth-brand">
+                🛡️ RouteShield AI
+            </div>
+
+
+            <div class="auth-tabs">
+
+                <button
+                    type="button"
+                    class="auth-tab"
+                    id="loginTab2"
+                >
+                    Sign In
+                </button>
+
+
+                <button
+                    type="button"
+                    class="auth-tab active"
+                    id="registerTab2"
+                >
+                    Create Account
+                </button>
+
+            </div>
+
+
+            <h2>
+                Create Account
+            </h2>
+
+
+            <p class="auth-subtitle">
+                Create your account first.
+                You will be taken to a separate OTP page.
+            </p>
+
+
+            <form id="registerForm">
+
+                <label for="registerName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <label for="registerEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="registerPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    minlength="6"
+                    placeholder="Create password"
+                    required
+                >
+
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    minlength="6"
+                    placeholder="Confirm password"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p class="switch-text">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    class="switch-button"
+                    id="showLogin"
+                >
+                    Sign In
+                </button>
+
+            </p>
+
+
+            <p
+                class="auth-message"
+                id="registerMessage"
+            ></p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
+
+{% else %}
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar">
+
+    <!-- LOGO -->
+
+    <div class="logo">
+
+        <span class="logo-icon">
+            S
+        </span>
+
+        <div class="logo-text">
+
+            <h2>
+                RouteShield AI
+            </h2>
+
+            <p>
+                Travel safer. Travel smarter.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#planner">
+            Route Planner
+        </a>
+
+        <a href="#emergency">
+            Emergency
+        </a>
+
+        <a href="#features">
+            Features
+        </a>
+
+    </nav>
+
+
+
+    <!-- USER ACTIONS -->
+
+    <div class="navbar-user-actions">
+
+        <span
+            class="navbar-user-name"
+            id="navbarUserName"
+        >
+            {{ session.get("user_name", "") }}
+        </span>
+
+
+        <button
+            type="button"
+            id="profileBtn"
+            class="profile-nav-button"
+        >
+            👤 Profile
+        </button>
+
+
+        <button
+            type="button"
+            id="logoutBtn"
+            class="logout-nav-button"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+
+    <!-- SOS BUTTON -->
+
+    <button
+        type="button"
+        class="sos-button btn-sos"
+        id="open-sos-btn"
+    >
+        🚨 SOS
+    </button>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="hero-text">
+
+        <span class="tag">
+            AI-POWERED SAFETY NAVIGATION
+        </span>
+
+
+        <h1>
+            Choose the safest route, not only the shortest route.
+        </h1>
+
+
+        <p>
+            RouteShield AI helps solo travellers, students, women,
+            tourists, elderly people and night-shift workers choose
+            safer travel routes using safety-aware route analysis.
+        </p>
+
+
+        <a
+            href="#planner"
+            class="hero-button"
+        >
+            Find Safe Route
+        </a>
+
+    </div>
+
+
+
+    <div class="hero-card">
+
+        <div class="shield">
+            ✓
+        </div>
+
+
+        <h2>
+            Safety First
+        </h2>
+
+
+        <p>
+            Routes are analysed using route information,
+            travel time, emergency proximity and safety-aware
+            scoring.
+        </p>
+
+
+        <div class="hero-score">
+
+            <strong id="hero-safety-score">
+                --
+            </strong>
+
+            <span>
+                Safety Score
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ROUTE PLANNER
+========================================================= -->
+
+<section
+    class="planner-section"
+    id="planner"
+>
+
+    <div class="section-heading">
+
+        <span class="tag">
+            ROUTE PLANNER
+        </span>
+
+
+        <h2>
+            Find a safer path
+        </h2>
+
+
+        <p>
+            Enter your starting point and destination to compare
+            multiple route options.
+        </p>
+
+    </div>
+
+
+
+    <div class="planner-container">
+
+
+        <!-- LEFT SIDE FORM -->
+
+        <div class="form-panel">
+
+
+            <!-- STARTING POINT -->
+
+            <div class="input-group">
+
+                <label for="start-input">
+                    Starting Point
+                </label>
+
+
+                <input
+                    type="text"
+                    id="start-input"
+                    placeholder="Example: Alpha 1, Greater Noida"
+                    autocomplete="off"
+                >
+
+
+                <div
+                    id="start-suggestions"
+                    class="location-suggestions"
+                ></div>
+
+            </div>
+
+
+
+            <!-- DESTINATION -->
+
+            <div class="input-group">
+
+                <label for="dest-input">
+                    Destination
+                </label>
+
+
+                <input
+                    type="text"
+                    id="dest-input"
+                    placeholder="Example: Pari Chowk"
+                    autocomplete="off"
+                >
+
+
+                <div
+                    id="destination-suggestions"
+                    class="location-suggestions"
+                ></div>
+
+            </div>
+
+
+
+            <!-- TIME + MODE -->
+
+            <div class="form-row">
+
+
+                <div class="input-group">
+
+                    <label for="time-input">
+                        Travel Time
+                    </label>
+
+
+                    <input
+                        type="time"
+                        id="time-input"
+                        value="21:00"
+                    >
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label for="mode-select">
+                        Travel Mode
+                    </label>
+
+
+                    <select id="mode-select">
+
+                        <option value="Driving">
+                            Driving
+                        </option>
+
+                        <option value="Walking">
+                            Walking
+                        </option>
+
+                        <option value="Bicycling">
+                            Bicycling
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AVOID DARK ROADS -->
+
+            <div class="checkbox">
+
+                <input
+                    type="checkbox"
+                    id="avoid-dark"
+                    checked
+                >
+
+                <label for="avoid-dark">
+                    Avoid isolated or poorly lit roads
+                </label>
+
+            </div>
+
+
+
+            <!-- ANALYSE BUTTON -->
+
+            <button
+                type="button"
+                id="analyze-btn"
+                class="primary-button"
+            >
+                Analyse Safest Routes
+            </button>
+
+
+
+            <!-- CURRENT LOCATION -->
+
+            <button
+                type="button"
+                id="location-btn"
+                class="location-button"
+            >
+                📍 Use My Current Location
+            </button>
+
+            <button
+                type="button"
+                id="start-navigation-btn"
+                class="location-button"
+            >
+                ▶ Start Live Navigation
+            </button>
+
+
+
+            <!-- STATUS -->
+
+            <div
+                id="planner-status"
+                class="planner-status"
+            ></div>
+
+
+
+            <!-- BACKEND INFO -->
+
+            <div class="prototype-note">
+
+                <strong>
+                    AI Backend Connected
+                </strong>
+
+                <p>
+                    RouteShield AI combines route information,
+                    travel time, emergency proximity and ML-based
+                    safety scoring to compare available routes.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             MAP PANEL
+        ====================================================== -->
+
+        <div class="map-panel">
+
+
+            <!-- MAP -->
+
+            <div id="map"></div>
+
+
+
+            <!-- MAP LEGEND -->
+
+            <div class="map-legend">
+
+                <span>
+                    <i class="safe-dot"></i>
+                    Safe Route
+                </span>
+
+
+                <span>
+                    <i class="moderate-dot"></i>
+                    Moderate Route
+                </span>
+
+
+                <span>
+                    <i class="risk-dot"></i>
+                    High-Risk Route
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ROUTE RECOMMENDATIONS
+
+                 JAVASCRIPT WILL DYNAMICALLY CREATE:
+
+                 SAFE ROUTE
+                 MODERATE ROUTE
+                 HIGH-RISK ROUTE
+
+                 ONLY THE ACTIVE ROUTE DETAILS WILL BE SHOWN
+            ================================================== -->
+
+            <div
+                id="route-recommendations-list"
+                class="route-recommendations"
+            ></div>
+
+
+
+            <!-- SELECTED ROUTE DETAILS -->
+
+            <div
+                id="selected-route-details"
+                class="selected-route-details"
+            >
+
+                <!-- Dynamic content from script.js -->
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EMERGENCY SERVICES
+========================================================= -->
+
+<section
+    class="emergency-section"
+    id="emergency"
+>
+
+    <div class="section-heading">
+
+        <span class="tag">
+            NEARBY SUPPORT
+        </span>
+
+
+        <h2>
+            Emergency & Public Safety Services
+        </h2>
+
+
+        <p>
+            Nearby facilities dynamically update according to
+            your selected route locations.
+        </p>
+
+    </div>
+
+
+
+    <div class="emergency-grid">
+
+
+        <!-- POLICE -->
+
+        <div class="emergency-card">
+
+            <div class="emergency-icon">
+                P
+            </div>
+
+
+            <div class="emergency-info">
+
+                <h3>
+                    Police Station
+                </h3>
+
+
+                <p
+                    class="emergency-name"
+                    id="police-name"
+                >
+                    Select a route to find nearby police
+                </p>
+
+
+                <p class="emergency-subtext">
+                    Nearest available police facility
+                </p>
+
+
+                <span
+                    class="emergency-distance"
+                    id="police-dist"
+                >
+                    -- km away
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HOSPITAL -->
+
+        <div class="emergency-card">
+
+            <div class="emergency-icon">
+                H
+            </div>
+
+
+            <div class="emergency-info">
+
+                <h3>
+                    Hospital
+                </h3>
+
+
+                <p
+                    class="emergency-name"
+                    id="hospital-name"
+                >
+                    Select a route to find nearby hospital
+                </p>
+
+
+                <p class="emergency-subtext">
+                    Nearest available hospital
+                </p>
+
+
+                <span
+                    class="emergency-distance"
+                    id="hospital-dist"
+                >
+                    -- km away
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PUBLIC PLACE -->
+
+        <div class="emergency-card">
+
+            <div class="emergency-icon">
+                B
+            </div>
+
+
+            <div class="emergency-info">
+
+                <h3>
+                    Busy Public Place
+                </h3>
+
+
+                <p
+                    class="emergency-name"
+                    id="public-name"
+                >
+                    Select a route to find nearby public facility
+                </p>
+
+
+                <p class="emergency-subtext">
+                    Nearby public / transit facility
+                </p>
+
+
+                <span
+                    class="emergency-distance"
+                    id="public-dist"
+                >
+                    -- km away
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ALL EMERGENCY FACILITIES -->
+
+    <div
+        id="all-emergency-results"
+        class="all-emergency-results"
+    ></div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CORE FEATURES
+========================================================= -->
+
+<section
+    class="features-section"
+    id="features"
+>
+
+    <div class="section-heading center">
+
+        <span class="tag">
+            CORE FEATURES
+        </span>
+
+
+        <h2>
+            Designed for safer travel
+        </h2>
+
+    </div>
+
+
+
+    <div class="feature-grid">
+
+
+        <!-- FEATURE 1 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                AI
+            </div>
+
+            <h3>
+                AI Safety Score
+            </h3>
+
+            <p>
+                Generates a safety score from 0 to 100 for
+                available route options.
+            </p>
+
+        </div>
+
+
+
+        <!-- FEATURE 2 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                R
+            </div>
+
+            <h3>
+                Risk Navigation
+            </h3>
+
+            <p>
+                Compares alternative routes instead of simply
+                selecting the shortest route.
+            </p>
+
+        </div>
+
+
+
+        <!-- FEATURE 3 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                24
+            </div>
+
+            <h3>
+                Time Analysis
+            </h3>
+
+            <p>
+                Travel time is analysed to identify late-night
+                travel conditions.
+            </p>
+
+        </div>
+
+
+
+        <!-- FEATURE 4 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                +
+            </div>
+
+            <h3>
+                Emergency Proximity
+            </h3>
+
+            <p>
+                Displays nearby police stations, hospitals and
+                public facilities using live map data.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROFILE MODAL
+========================================================= -->
+
+<div
+    id="profileModal"
+    class="profile-modal"
+>
+
+    <div class="profile-modal-box">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            type="button"
+            id="closeProfileBtn"
+            class="profile-close-button"
+        >
+            &times;
+        </button>
+
+
+
+        <!-- PROFILE HEADER -->
+
+        <div class="profile-header">
+
+            <div
+                class="profile-avatar"
+                id="profileAvatar"
+            >
+                U
+            </div>
+
+
+            <div>
+
+                <h2>
+                    My Profile
+                </h2>
+
+                <p>
+                    Manage your RouteShield AI account
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROFILE FORM -->
+
+        <div class="profile-content">
+
+
+            <!-- NAME -->
+
+            <div class="profile-field">
+
+                <label for="profileName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="profileName"
+                    placeholder="Your full name"
+                >
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="profile-field">
+
+                <label for="profileEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="profileEmail"
+                    readonly
+                >
+
+            </div>
+
+
+
+            <!-- ACCOUNT STATUS -->
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span class="profile-info-label">
+                        Account Status
+                    </span>
+
+                    <strong
+                        id="profileStatus"
+                        class="profile-status"
+                    >
+                        Verified
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span class="profile-info-label">
+                        Member Since
+                    </span>
+
+                    <strong id="profileCreatedAt">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MESSAGE -->
+
+            <p
+                id="profileMessage"
+                class="profile-message"
+            ></p>
+            <!-- =========================================================
+     TRUSTED CONTACTS
+========================================================= -->
+
+<section class="trusted-contacts-section">
+
+    <div class="trusted-contacts-heading">
+
+        <div>
+            <span class="profile-info-label">
+                TRUSTED CONTACTS
+            </span>
+
+            <h3>
+                Emergency Contacts
+            </h3>
+        </div>
+
+        <span
+            id="trustedContactCount"
+            class="trusted-contact-count"
+        >
+            0 Contacts
+        </span>
+
+    </div>
+
+
+    <p class="trusted-contact-description">
+        Add people who should be notified during an emergency.
+    </p>
+
+
+    <!-- ADD CONTACT FORM -->
+
+    <div class="trusted-contact-form">
+
+        <div class="profile-field">
+
+            <label for="contactName">
+                Contact Name
+            </label>
+
+            <input
+                type="text"
+                id="contactName"
+                placeholder="Enter contact name"
+            >
+
+        </div>
+
+
+        <div class="profile-field">
+
+            <label for="contactPhone">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="contactPhone"
+                placeholder="+91 9876543210"
+            >
+
+        </div>
+
+
+        <div class="profile-field">
+
+            <label for="contactRelationship">
+                Relationship
+            </label>
+
+            <input
+                type="text"
+                id="contactRelationship"
+                placeholder="Friend, Brother, Parent..."
+            >
+
+        </div>
+
+
+        <button
+            type="button"
+            id="addTrustedContactBtn"
+            class="add-trusted-contact-btn"
+        >
+            + Add Trusted Contact
+        </button>
+
+    </div>
+
+
+    <!-- CONTACT LIST -->
+
+    <div
+        id="trustedContactsList"
+        class="trusted-contacts-list"
+    >
+
+        <p class="trusted-contacts-empty">
+            No trusted contacts added yet.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+            <!-- =========================================================
+                 MY ROUTES - PROFILE ADD-ON
+                 Only the selected route shows full details.
+            ========================================================= -->
+
+            <section class="profile-routes-section">
+
+                <div class="profile-routes-heading">
+                    <div>
+                        <span class="profile-info-label">MY ROUTES</span>
+                        <h3>Route Options</h3>
+                    </div>
+
+                    <span
+                        id="profileRouteCount"
+                        class="profile-route-count"
+                    >
+                        No routes yet
+                    </span>
+                </div>
+
+                <p
+                    id="profileRoutesEmpty"
+                    class="profile-routes-empty"
+                >
+                    Generate routes from the Route Planner to see them here.
+                </p>
+
+                <!-- Exactly 3 route selectors are rendered here by JavaScript -->
+                <div
+                    id="profile-routes-list"
+                    class="profile-routes-list"
+                ></div>
+
+                <!-- ONLY THE CLICKED/SELECTED ROUTE DETAILS APPEAR HERE -->
+                <div
+                    id="profile-selected-route-details"
+                    class="profile-selected-route-details"
+                    hidden
+                >
+                    <div class="profile-selected-route-heading">
+                        <h3 id="profileSelectedRouteTitle">
+                            Selected Route
+                        </h3>
+
+                        <span
+                            id="profileSelectedRouteBadge"
+                            class="profile-selected-route-badge"
+                        >
+                            Selected
+                        </span>
+                    </div>
+
+                    <div class="profile-route-details-grid">
+
+                        <div class="profile-route-detail-item">
+                            <span>Distance</span>
+                            <strong id="profileSelectedDistance">--</strong>
+                        </div>
+
+                        <div class="profile-route-detail-item">
+                            <span>Duration</span>
+                            <strong id="profileSelectedDuration">--</strong>
+                        </div>
+
+                        <div class="profile-route-detail-item">
+                            <span>Safety Score</span>
+                            <strong id="profileSelectedScore">--</strong>
+                        </div>
+
+                    </div>
+
+                    <p
+                        id="profileSelectedDescription"
+                        class="profile-selected-description"
+                    ></p>
+                </div>
+
+            </section>
+
+
+            <!-- ACTIONS -->
+
+            <div class="profile-actions">
+
+                <button
+                    type="button"
+                    id="saveProfileBtn"
+                    class="profile-save-button"
+                >
+                    Save Changes
+                </button>
+
+
+                <button
+                    type="button"
+                    id="closeProfileBtnBottom"
+                    class="profile-cancel-button"
+                >
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     SOS MODAL
+========================================================= -->
+
+<div
+    id="sos-modal"
+    class="modal"
+>
+
+    <div class="modal-box">
+
+
+        <button
+            type="button"
+            class="close-button"
+            id="close-sos-btn"
+        >
+            &times;
+        </button>
+
+
+
+        <div class="alert-icon">
+            !
+        </div>
+
+
+        <h2>
+            Emergency SOS
+        </h2>
+
+
+        <p>
+            Your location will be retrieved to assist emergency callers.
+        </p>
+
+
+        <div id="sos-location-text">
+            Fetching current coordinates...
+        </div>
+
+
+
+        <div class="modal-actions">
+
+
+            <a
+                href="tel:112"
+                class="primary-button share-button"
+            >
+                Call Emergency Helpline (112)
+            </a>
+
+
+
+            <button
+                id="share-location-btn"
+                type="button"
+                class="location-button"
+            >
+                Copy Live Location Link
+            </button>
+
+
+
+            <button
+                type="button"
+                id="cancel-sos-btn"
+                class="location-button"
+            >
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <h3>
+                RouteShield AI
+            </h3>
+
+
+            <p>
+                Intelligent safety-aware route recommendation
+                system powered by ML to support safer travel.
+            </p>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-col">
+
+            <h4>
+                Quick Links
+            </h4>
+
+
+            <ul>
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#planner">
+                        Route Planner
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#emergency">
+                        Emergency
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#features">
+                        Features
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- SUPPORT -->
+
+        <div class="footer-col">
+
+            <h4>
+                Support
+            </h4>
+
+
+            <ul>
+
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Terms of Use
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Safety Guidelines
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- HELPLINES -->
+
+        <div class="footer-col footer-contact">
+
+            <h4>
+                Emergency Helplines
+            </h4>
+
+
+            <p>
+                <strong>National Helpline:</strong>
+                112
+            </p>
+
+
+            <p>
+                <strong>Women Helpline:</strong>
+                1091
+            </p>
+
+
+            <p>
+                <strong>Police:</strong>
+                100
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 RouteShield AI. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+{% endif %}
+
+
+
+<!-- =========================================================
+     LEAFLET JAVASCRIPT
+========================================================= -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+></script>
+
+
+
+<!-- =========================================================
+     ROUTESHIELD JAVASCRIPT
+========================================================= -->
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+></script>
+
+
+</body>
+</html>
