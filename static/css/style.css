@@ -3451,3 +3451,12 @@ footer {
     padding: 15px;
     opacity: 0.65;
 }
+/* ---- clickable route cards: selected highlighted, others dimmed ---- */
+.route-card { cursor: pointer; transition: opacity .2s ease, box-shadow .2s ease, transform .2s ease; }
+.route-card.route-dimmed { opacity: .55; }
+.route-card.route-dimmed:hover { opacity: .85; }
+.route-card.route-selected { opacity: 1; box-shadow: 0 0 0 3px rgba(37,107,90,.55), 0 10px 26px rgba(0,0,0,.12); }
+.route-card.route-safe.route-selected { box-shadow: 0 0 0 3px #2e7d32, 0 10px 26px rgba(46,125,50,.25); }
+.route-card.route-moderate.route-selected { box-shadow: 0 0 0 3px #f57c00, 0 10px 26px rgba(245,124,0,.25); }
+.route-card.route-high-risk.route-selected { box-shadow: 0 0 0 3px #d32f2f, 0 10px 26px rgba(211,47,47,.25); }
+.route-card:focus-visible { outline: 3px solid #256b5a; outline-offset: 2px; }

@@ -760,158 +760,21 @@ document.addEventListener("DOMContentLoaded", () => {
    ======================================================== */
 
 function ensureThreeRoutes(routes) {
-
+    /* Show ONLY the real routes returned by the backend (max 3).
+       Earlier versions cloned route 1 and subtracted points from its
+       score to fake a "moderate" and a "high-risk" route. */
     if (!routes || routes.length === 0) {
         return [];
     }
-
-    const result = routes.slice(0, 3);
-
-    // If backend gives fewer than 3 routes,
-    // create display alternatives from the available route.
-    while (result.length < 3) {
-
-        const source = result[0];
-
-        if (!source) break;
-
-        const index = result.length;
-
-        const copy = JSON.parse(
-            JSON.stringify(source)
-        );
-
-        copy.demo_alternative = true;
-
-        // Slightly different distance
-        const baseDistance =
-            Number(
-                source.distance_val ||
-                parseFloat(source.distance) ||
-                0
-            );
-
-        const distanceMultiplier =
-            index === 1
-                ? 1.12
-                : 1.27;
-
-        const newDistance =
-            baseDistance
-                ? Number(
-                    (
-                        baseDistance *
-                        distanceMultiplier
-                    ).toFixed(2)
-                )
-                : 0;
-
-        copy.distance_val = newDistance;
-
-        copy.distance =
-            newDistance
-                ? `${newDistance} km`
-                : source.distance;
-
-        // Slightly different duration
-        const baseDuration =
-            Number(
-                source.duration_val ||
-                0
-            );
-
-        const extraMinutes =
-            index === 1
-                ? 1
-                : 2;
-
-        const newDuration =
-            baseDuration
-                ? Number(
-                    (
-                        baseDuration +
-                        extraMinutes
-                    ).toFixed(1)
-                )
-                : 0;
-
-        copy.duration_val =
-            newDuration;
-
-        copy.duration =
-            newDuration
-                ? `${Math.round(newDuration)} min`
-                : source.duration;
-
-        result.push(copy);
-    }
-
-    /* ----------------------------------------------------
-       FORCE EXACT CATEGORIES
-       ---------------------------------------------------- */
-
-    const categories = [
-        {
-            type: "safe",
-            label: "Safer Route (Recommended)",
-            color: "#2e7d32",
-            adjustment: 0
-        },
-        {
-            type: "moderate",
-            label: "Moderate Risk Route",
-            color: "#f57c00",
-            adjustment: 12
-        },
-        {
-            type: "risk",
-            label: "High-Risk Route",
-            color: "#d32f2f",
-            adjustment: 25
-        }
-    ];
-
-    return result
-        .slice(0, 3)
-        .map((route, index) => {
-
-            const category =
-                categories[index];
-
-            const originalScore =
-                Number(
-                    route.safety_score
-                ) || 0;
-
-            return {
-                ...route,
-
-                id: index + 1,
-
-                type:
-                    category.type,
-
-                label:
-                    category.label,
-
-                color:
-                    category.color,
-
-                safety_score:
-                    Math.max(
-                        30,
-                        Math.min(
-                            98,
-                            Math.round(
-                                originalScore -
-                                category.adjustment
-                            )
-                        )
-                    )
-            };
-        });
+    return routes.slice(0, 3).map((route, index) => {
+        const type = route.type || "moderate";
+        const color =
+            type === "safe" ? "#2e7d32"
+            : type === "moderate" ? "#f57c00"
+            : "#d32f2f";
+        return { ...route, id: index + 1, type, color };
+    });
 }
-
 
     /* ========================================================
        DRAW ROUTES
@@ -924,192 +787,86 @@ function ensureThreeRoutes(routes) {
    Red = High Risk
    ======================================================== */
 
+let displayedRoutes = [];
+
 function drawRoutes(routes) {
 
     if (!map) return;
 
     clearRoutes();
 
-    const displayRoutes =
-        ensureThreeRoutes(routes);
+    displayedRoutes = ensureThreeRoutes(routes);
 
-
-    /* Keep Profile > My Routes synchronized with the same
-       three routes that are already rendered in Route Planner. */
     if (typeof window.updateProfileRoutes === "function") {
-        window.updateProfileRoutes(displayRoutes, 0);
+        window.updateProfileRoutes(displayedRoutes, 0);
     }
 
-    if (
-        !displayRoutes ||
-        displayRoutes.length === 0
-    ) {
+    if (displayedRoutes.length === 0) {
         return;
     }
 
     const bounds = [];
 
-    /*
-       IMPORTANT:
-       Draw the routes in normal order, but ALWAYS offset
-       the orange and red routes slightly from the green route.
-       This keeps all THREE visible even when the backend/OSRM
-       returns the same geometry for the alternatives.
-    */
+    displayedRoutes.forEach((route, index) => {
 
-    displayRoutes.forEach(
-        (route, index) => {
+        const coordinates =
+            ((route.geojson && route.geojson.coordinates) || [])
+                .map(coord => [coord[1], coord[0]]);
 
-            if (!route || !route.geojson) {
-                return;
-            }
+        const polyline = L.polyline(coordinates, {
+            color: route.color,
+            weight: 6,
+            opacity: 0.9,
+            lineCap: "round",
+            lineJoin: "round"
+        }).addTo(map);
 
-            let coordinates = [];
+        polyline.bindTooltip(
+            `${escapeHtml(route.label || "Route")} \u2022 ` +
+            `${route.safety_score ?? "--"}/100 \u2022 ` +
+            `${escapeHtml(route.distance || "--")} \u2022 ` +
+            `${escapeHtml(route.duration || "--")}`,
+            { sticky: true }
+        );
 
-            if (
-                route.geojson.coordinates
-            ) {
+        polyline.on("click", () => focusRoute(index, { fit: false }));
 
-                coordinates =
-                    route.geojson.coordinates
-                        .map(coord => [
-                            coord[1],
-                            coord[0]
-                        ]);
-            }
+        routeLayers.push(polyline);
+        coordinates.forEach(point => bounds.push(point));
+    });
 
-            if (coordinates.length === 0) {
-                return;
-            }
-
-            /*
-               Separate every alternative:
-               Green = original geometry
-               Orange = small positive offset
-               Red = small negative offset
-
-               This is applied even to real backend routes,
-               because their geometry can sometimes be identical.
-            */
-
-            if (index === 1) {
-
-                const offset = 0.00032;
-
-                coordinates =
-                    coordinates.map(
-                        ([lat, lng]) => [
-                            lat + offset,
-                            lng + offset
-                        ]
-                    );
-            }
-
-            if (index === 2) {
-
-                const offset = -0.00032;
-
-                coordinates =
-                    coordinates.map(
-                        ([lat, lng]) => [
-                            lat + offset,
-                            lng + offset
-                        ]
-                    );
-            }
-
-            const color =
-                index === 0
-                    ? "#2e7d32"
-                    : index === 1
-                        ? "#f57c00"
-                        : "#d32f2f";
-
-            const weight =
-                index === 0
-                    ? 8
-                    : 6;
-
-            const opacity =
-                index === 0
-                    ? 1
-                    : 0.88;
-
-            const polyline =
-                L.polyline(
-                    coordinates,
-                    {
-                        color: color,
-                        weight: weight,
-                        opacity: opacity,
-                        lineCap: "round",
-                        lineJoin: "round"
-                    }
-                ).addTo(map);
-
-            polyline.bindPopup(
-                `
-                <strong>
-                    ${escapeHtml(
-                        route.label ||
-                        (
-                            index === 0
-                                ? "Safer Route (Recommended)"
-                                : index === 1
-                                    ? "Moderate Risk Route"
-                                    : "High-Risk Route"
-                        )
-                    )}
-                </strong>
-
-                <br><br>
-
-                Safety Score:
-                <strong>
-                    ${route.safety_score ?? "--"}
-                </strong>
-
-                /100
-
-                <br>
-
-                Distance:
-                ${escapeHtml(
-                    route.distance || "--"
-                )}
-
-                <br>
-
-                Duration:
-                ${escapeHtml(
-                    route.duration || "--"
-                )}
-                `
-            );
-
-            routeLayers.push(
-                polyline
-            );
-            window.__routeShieldRouteLayers = routeLayers;
-
-            coordinates.forEach(
-                point =>
-                    bounds.push(point)
-            );
-        }
-    );
+    window.__routeShieldRouteLayers = routeLayers;
 
     if (bounds.length > 0) {
+        map.fitBounds(bounds, { padding: [50, 50] });
+    }
 
-        map.fitBounds(
-            bounds,
-            {
-                padding: [
-                    50,
-                    50
-                ]
-            }
-        );
+    highlightRoute(0);
+}
+
+
+/* Selected route = bold + on top; the others stay visible but dimmed. */
+function highlightRoute(index) {
+
+    selectedRouteIndex = index;
+    window.__routeShieldSelectedRouteIndex = index;
+
+    routeLayers.forEach((layer, i) => {
+        const selected = i === index;
+        layer.setStyle({
+            weight: selected ? 9 : 5,
+            opacity: selected ? 1 : 0.28
+        });
+        if (selected) layer.bringToFront();
+    });
+
+    if (routeList) {
+        routeList.querySelectorAll(".route-card").forEach(card => {
+            const selected = Number(card.dataset.routeIndex) === index;
+            card.classList.toggle("route-selected", selected);
+            card.classList.toggle("route-dimmed", !selected);
+            card.setAttribute("aria-pressed", String(selected));
+        });
     }
 }
 
@@ -1423,8 +1180,7 @@ function renderRouteCards(routes) {
                 riskClass =
                     "route-safe";
 
-                riskText =
-                    "Safer Route (Recommended)";
+                riskText = index === 0 ? "Safer Route (Recommended)" : "Safe Route (Alternative)";
 
                 icon = "✓";
 
@@ -1439,8 +1195,7 @@ function renderRouteCards(routes) {
                 riskClass =
                     "route-moderate";
 
-                riskText =
-                    "Moderate Risk Route";
+                riskText = index === 0 ? "Moderate Risk Route (Best Available)" : "Moderate Risk Route";
 
                 icon = "!";
 
@@ -1654,9 +1409,22 @@ function renderRouteCards(routes) {
                 </div>
                 `;
 
-            routeList.appendChild(
-                card
-            );
+            card.dataset.routeIndex = String(index);
+            card.tabIndex = 0;
+            card.setAttribute("role", "button");
+            card.setAttribute("aria-label", `Show ${riskText} on the map`);
+            card.addEventListener("click", event => {
+                if (event.target.closest("button, a, .explanation-toggle")) return;
+                focusRoute(index);
+            });
+            card.addEventListener("keydown", event => {
+                if (event.key === "Enter" || event.key === " ") {
+                    if (event.target.closest("button, a")) return;
+                    event.preventDefault();
+                    focusRoute(index);
+                }
+            });
+            routeList.appendChild(card);
         }
     );
 
@@ -1667,7 +1435,9 @@ function renderRouteCards(routes) {
 
     routeList.insertAdjacentHTML(
         "beforeend",
-        buildRouteComparisonHtml(displayRoutes)
+        displayRoutes.length < 2
+            ? `<div class="route-empty">Only one route is available between these places, so there is nothing to compare.</div>`
+            : buildRouteComparisonHtml(displayRoutes)
     );
 
 
@@ -1758,72 +1528,22 @@ function renderRouteCards(routes) {
        FOCUS INDIVIDUAL ROUTE
        ======================================================== */
 
-    function focusRoute(index) {
+    function focusRoute(index, opts = {}) {
 
-        selectedRouteIndex = index;
-        window.__routeShieldSelectedRouteIndex = index;
+        const route = displayedRoutes[index];
+        if (!route) return;
 
-        if (
-            !lastAnalysis ||
-            !lastAnalysis.routes ||
-            !lastAnalysis.routes[index]
-        ) {
-            return;
-        }
+        highlightRoute(index);
 
-        const route =
-            lastAnalysis.routes[index];
-
-        routeLayers.forEach(
-            (layer, layerIndex) => {
-
-                layer.setStyle({
-
-                    weight:
-                        layerIndex === index
-                            ? 8
-                            : 4,
-
-                    opacity:
-                        layerIndex === index
-                            ? 1
-                            : 0.35
-                });
-            }
-        );
-
-        if (
-            route.geojson &&
-            route.geojson.coordinates &&
-            map
-        ) {
-
-            const points =
-                route.geojson.coordinates
-                    .map(
-                        coord => [
-                            coord[1],
-                            coord[0]
-                        ]
-                    );
-
+        if (opts.fit !== false && map && route.geojson && route.geojson.coordinates) {
+            const points = route.geojson.coordinates.map(c => [c[1], c[0]]);
             if (points.length) {
-
-                map.fitBounds(
-                    L.latLngBounds(points),
-                    {
-                        padding: [40, 40]
-                    }
-                );
+                map.fitBounds(L.latLngBounds(points), { padding: [40, 40] });
             }
         }
 
-        renderAnalysisForRoute(
-            route,
-            index
-        );
+        renderAnalysisForRoute(route, index);
     }
-
 
     /* Profile route selector can reuse the existing map/analysis logic. */
     window.routeShieldFocusRoute = focusRoute;
